@@ -1,0 +1,179 @@
+(kicad_sch
+	(version 20260306)
+	(generator "eeschema")
+	(generator_version "10.0")
+	(uuid "2b93e89d-bdf9-4578-8fa1-59d0c819a910")
+	(paper "A4")
+	(title_block
+		(title "scramble_hat — top-level (hierarchical)")
+		(rev "A.1")
+		(comment 1 "Audio I/O hat for Waveshare ESP32-P4-ETH carrier. See agents.md for editing rules.")
+	)
+	(lib_symbols)
+	(text "scramble_hat — hierarchical schematic\n\nCodec: ES8389 + decoupling + carrier sockets + I2C straps\nInput: Neutrik combo + ESD + isolated phantom + status LED + Y-cap + DNP ground-lift\nOutput: TRRS jack + output coupling + electret mic bias\n\nAll inter-sheet connectivity via global labels (visible in each sub-sheet).\nFor AI-agent editing rules see agents.md."
+		(exclude_from_sim no)
+		(at 30 80 0)
+		(effects
+			(font
+				(size 1.5 1.5)
+			)
+			(justify left top)
+		)
+		(uuid "5cc7c1bf-c8a3-4cca-9c6e-08fa64f1b3ed")
+	)
+	(text "claude-insert-below — sentinel for Edit anchors. DO NOT DELETE."
+		(exclude_from_sim no)
+		(at 200 200 0)
+		(effects
+			(font
+				(size 0.5 0.5)
+			)
+			(justify left top)
+		)
+		(uuid "8f5cc087-9a68-4fd6-8978-bb9fd95c1808")
+	)
+	(sheet
+		(at 30 30)
+		(size 50 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "497e70f2-e060-4d80-87fd-d674c24dd8d4")
+		(property "Sheetname" "Codec"
+			(at 30 29.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheet_codec.kicad_sch"
+			(at 30 55.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "scramble_hat"
+				(path "/2b93e89d-bdf9-4578-8fa1-59d0c819a910"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 170 30)
+		(size 50 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f018dd5f-0a42-417a-90ae-3028758c1025")
+		(property "Sheetname" "Output"
+			(at 170 29.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheet_output.kicad_sch"
+			(at 170 55.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "scramble_hat"
+				(path "/2b93e89d-bdf9-4578-8fa1-59d0c819a910"
+					(page "4")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 100 30)
+		(size 50 25)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0)
+		)
+		(uuid "f89707d4-5ec9-426f-a042-e33ce0e25fbe")
+		(property "Sheetname" "Input"
+			(at 100 29.27 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "sheet_input.kicad_sch"
+			(at 100 55.93 0)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "scramble_hat"
+				(path "/2b93e89d-bdf9-4578-8fa1-59d0c819a910"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)

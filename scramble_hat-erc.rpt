@@ -1,0 +1,837 @@
+ERC report (2026-05-12T22:53:57, Encoding UTF8)
+Report includes: Errors, Warnings
+
+***** Sheet /
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 66.03 mm): Global Label 'PHANTOM_EN'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 68.57 mm): Global Label 'ASDOUT'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 71.11 mm): Global Label 'DSDIN'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 73.65 mm): Global Label 'LRCK'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 78.73 mm): Global Label 'BCLK'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 81.27 mm): Global Label 'MCLK'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 116.03 mm): Global Label 'SDA'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 118.57 mm): Global Label 'SCL'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 123.65 mm): Global Label 'EN'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 128.73 mm): Global Label 'VSYS'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 130.00 mm): Global Label '+3V3'
+[label_dangling]: Label not connected
+    ; error
+    @(75.00 mm, 131.27 mm): Global Label 'VBUS'
+[label_dangling]: Label not connected
+    ; error
+    @(161.19 mm, 117.78 mm): Global Label 'GND'
+[label_dangling]: Label not connected
+    ; error
+    @(185.00 mm, 84.76 mm): Global Label 'AVDD'
+[label_dangling]: Label not connected
+    ; error
+    @(211.00 mm, 88.00 mm): Global Label 'MIC1P'
+[label_dangling]: Label not connected
+    ; error
+    @(211.00 mm, 95.00 mm): Global Label 'MIC1N'
+[label_dangling]: Label not connected
+    ; error
+    @(220.00 mm, 176.81 mm): Global Label 'AGND'
+[label_dangling]: Label not connected
+    ; error
+    @(222.00 mm, 73.46 mm): Global Label '+48V_PHANTOM'
+[label_dangling]: Label not connected
+    ; error
+    @(223.08 mm, 145.00 mm): Global Label 'VDD_PoE'
+[label_dangling]: Label not connected
+    ; error
+    @(223.08 mm, 147.54 mm): Global Label 'PGND'
+[label_dangling]: Label not connected
+    ; error
+    @(232.81 mm, 145.00 mm): Global Label 'V_PoE_FILT'
+[label_dangling]: Label not connected
+    ; error
+    @(250.00 mm, 97.70 mm): Global Label 'XLR3_COLD'
+[label_dangling]: Label not connected
+    ; error
+    @(250.00 mm, 102.78 mm): Global Label 'XLR2_HOT'
+[label_dangling]: Label not connected
+    ; error
+    @(130.00 mm, 196.00 mm): Global Label 'AVDD'
+[label_dangling]: Label not connected
+    ; error
+    @(130.00 mm, 204.08 mm): Global Label 'MIC_BIAS'
+[label_dangling]: Label not connected
+    ; error
+    @(145.00 mm, 165.92 mm): Global Label 'LOUTP'
+[label_dangling]: Label not connected
+    ; error
+    @(145.00 mm, 175.92 mm): Global Label 'ROUTP'
+[label_dangling]: Label not connected
+    ; error
+    @(145.00 mm, 184.08 mm): Global Label 'ROUT_AC'
+[label_dangling]: Label not connected
+    ; error
+    @(145.00 mm, 190.92 mm): Global Label 'MIC2N'
+[label_dangling]: Label not connected
+    ; error
+    @(145.00 mm, 199.08 mm): Global Label 'AGND'
+[label_dangling]: Label not connected
+    ; error
+    @(160.00 mm, 165.92 mm): Global Label 'LOUT_AC'
+[label_dangling]: Label not connected
+    ; error
+    @(160.00 mm, 174.08 mm): Global Label 'TRRS_T'
+[label_dangling]: Label not connected
+    ; error
+    @(160.00 mm, 184.08 mm): Global Label 'TRRS_R1'
+[label_dangling]: Label not connected
+    ; error
+    @(160.00 mm, 190.92 mm): Global Label 'MIC2P'
+[label_dangling]: Label not connected
+    ; error
+    @(160.00 mm, 199.08 mm): Global Label 'TRRS_S'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(64.92 mm, 81.27 mm): Symbol J3 Pin 2 [Pin_2, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(64.92 mm, 131.27 mm): Symbol J4 Pin 2 [Pin_2, Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Connector_PinSocket_2.54mm'
+    ; warning
+    @(70.00 mm, 80.00 mm): Symbol J3 [Conn_01x07]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Connector_PinSocket_2.54mm'
+    ; warning
+    @(70.00 mm, 130.00 mm): Symbol J4 [Conn_01x07]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(130.00 mm, 105.00 mm): Symbol R1 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(130.00 mm, 108.81 mm): Symbol R1 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(137.00 mm, 107.54 mm): Symbol R2 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(137.00 mm, 111.35 mm): Symbol R2 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(145.00 mm, 76.19 mm): Symbol C1 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(145.00 mm, 80.00 mm): Symbol C1 [C]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(145.00 mm, 95.00 mm): Symbol R3 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(145.00 mm, 98.81 mm): Symbol R3 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(145.00 mm, 113.00 mm): Symbol R4 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(145.00 mm, 116.81 mm): Symbol R4 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(150.00 mm, 80.00 mm): Symbol C2 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(150.00 mm, 83.81 mm): Symbol C2 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(158.00 mm, 121.19 mm): Symbol C9 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(158.00 mm, 125.00 mm): Symbol C9 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(158.65 mm, 115.24 mm): Symbol U1 Pin 7 [DGND, Power input, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(161.00 mm, 121.19 mm): Symbol C7 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(161.00 mm, 125.00 mm): Symbol C7 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(165.00 mm, 76.19 mm): Symbol C3 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(165.00 mm, 80.00 mm): Symbol C3 [C]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Package_DFN_QFN'
+    ; warning
+    @(165.00 mm, 100.00 mm): Symbol U1 [ES8389]
+[lib_symbol_mismatch]: Symbol 'ES8389' doesn't match copy in library 'scramble_hat'
+    ; warning
+    @(165.00 mm, 100.00 mm): Symbol U1 [ES8389]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(168.00 mm, 121.19 mm): Symbol C8 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(168.00 mm, 125.00 mm): Symbol C8 [C]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Inductor_SMD'
+    ; warning
+    @(175.00 mm, 80.00 mm): Symbol FB1 [FB]
+[lib_symbol_mismatch]: Symbol 'FB' doesn't match copy in library 'scramble_hat'
+    ; warning
+    @(175.00 mm, 80.00 mm): Symbol FB1 [FB]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(175.00 mm, 83.81 mm): Symbol FB1 Pin 2 [Passive, Line]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 89.84 mm): Global Label 'MIC1P'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 92.38 mm): Global Label 'MIC1N'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 94.92 mm): Global Label 'MIC2P'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 97.46 mm): Global Label 'MIC2N'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 102.54 mm): Global Label 'LOUTP'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 105.08 mm): Global Label 'LOUTN'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 107.62 mm): Global Label 'ROUTP'
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(175.16 mm, 110.16 mm): Global Label 'ROUTN'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(185.00 mm, 76.19 mm): Symbol C4 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(185.00 mm, 80.00 mm): Symbol C4 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(190.00 mm, 76.19 mm): Symbol C5 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(190.00 mm, 80.00 mm): Symbol C5 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(195.00 mm, 76.19 mm): Symbol C6 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(195.00 mm, 80.00 mm): Symbol C6 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(204.19 mm, 88.00 mm): Symbol D1 Pin 1 [K, Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Package_TO_SOT_SMD'
+    ; warning
+    @(208.00 mm, 88.00 mm): Symbol D1 [D_TVS]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Package_TO_SOT_SMD'
+    ; warning
+    @(208.00 mm, 95.00 mm): Symbol D2 [D_TVS]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(211.81 mm, 95.00 mm): Symbol D2 Pin 2 [A, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(212.92 mm, 147.54 mm): Symbol J5 Pin 2 [Pin_2, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(215.00 mm, 84.19 mm): Symbol C10 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(215.00 mm, 88.00 mm): Symbol C10 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(215.00 mm, 91.19 mm): Symbol C11 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(215.00 mm, 95.00 mm): Symbol C11 [C]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Connector_PinHeader_2.54mm'
+    ; warning
+    @(218.00 mm, 145.00 mm): Symbol J5 [Conn_01x02]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(220.00 mm, 168.00 mm): Symbol R15 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(220.00 mm, 171.81 mm): Symbol R15 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'LED_SMD'
+    ; warning
+    @(220.00 mm, 173.00 mm): Symbol D8 [D_TVS]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(222.00 mm, 78.00 mm): Symbol R5 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(222.00 mm, 81.81 mm): Symbol R5 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(222.00 mm, 82.00 mm): Symbol R6 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(222.00 mm, 85.81 mm): Symbol R6 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(223.81 mm, 173.00 mm): Symbol D8 Pin 2 [A, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(224.19 mm, 145.00 mm): Symbol F1 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Fuse'
+    ; warning
+    @(228.00 mm, 145.00 mm): Symbol F1 [Polyfuse]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Diode_SMD'
+    ; warning
+    @(235.00 mm, 145.00 mm): Symbol D6 [D_TVS]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(235.00 mm, 148.81 mm): Symbol D6 Pin 1 [K, Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Connector_Audio'
+    ; warning
+    @(240.00 mm, 90.00 mm): Symbol J1 [NCJ6FI-H]
+[lib_symbol_mismatch]: Symbol 'NCJ6FI-H' doesn't match copy in library 'scramble_hat'
+    ; warning
+    @(240.00 mm, 90.00 mm): Symbol J1 [NCJ6FI-H]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(240.00 mm, 145.00 mm): Symbol C16 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(240.00 mm, 148.81 mm): Symbol C16 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(240.00 mm, 168.19 mm): Symbol R12 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(240.00 mm, 172.00 mm): Symbol R12 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(245.00 mm, 141.19 mm): Symbol C17 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(245.00 mm, 145.00 mm): Symbol C17 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(250.16 mm, 82.38 mm): Symbol J1 Pin 1 [XLR_1, Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Package_SO'
+    ; warning
+    @(252.00 mm, 172.00 mm): Symbol OK1 [Optocoupler]
+[lib_symbol_issues]: Symbol 'Optocoupler' not found in symbol library 'scramble_hat'
+    ; warning
+    @(252.00 mm, 172.00 mm): Symbol OK1 [Optocoupler]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Package_TO_SOT_SMD'
+    ; warning
+    @(255.00 mm, 145.00 mm): Symbol Q1 [Q_PMOS_GSD]
+[lib_symbol_mismatch]: Symbol 'Q_PMOS_GSD' doesn't match copy in library 'scramble_hat'
+    ; warning
+    @(255.00 mm, 145.00 mm): Symbol Q1 [Q_PMOS_GSD]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(257.54 mm, 139.92 mm): Symbol Q1 Pin 3 [D, Passive, Line]
+[isolated_pin_label]: Label connected to only one pin
+    ; warning
+    @(258.35 mm, 170.73 mm): Global Label 'Q1_GATE'
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(258.35 mm, 173.27 mm): Symbol OK1 Pin 4 [E, Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(262.00 mm, 134.19 mm): Symbol R11 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(262.00 mm, 138.00 mm): Symbol R11 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(262.00 mm, 142.00 mm): Symbol C18 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(262.00 mm, 145.81 mm): Symbol C18 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Diode_SMD'
+    ; warning
+    @(266.00 mm, 138.00 mm): Symbol D7 [D_TVS]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(269.81 mm, 138.00 mm): Symbol D7 Pin 2 [A, Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(270.00 mm, 167.00 mm): Symbol R13 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(270.00 mm, 170.81 mm): Symbol R13 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(272.00 mm, 191.19 mm): Symbol C19 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(276.00 mm, 200.00 mm): Symbol R14 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(276.00 mm, 203.81 mm): Symbol R14 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(125.00 mm, 203.19 mm): Symbol C13 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(125.00 mm, 207.00 mm): Symbol C13 [C]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(130.00 mm, 200.00 mm): Symbol R7 [R]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(133.81 mm, 200.00 mm): Symbol R7 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(145.00 mm, 170.00 mm): Symbol R9 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Resistor_SMD'
+    ; warning
+    @(145.00 mm, 180.00 mm): Symbol R10 [R]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(145.00 mm, 195.00 mm): Symbol C20 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(148.81 mm, 170.00 mm): Symbol R9 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(148.81 mm, 180.00 mm): Symbol R10 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(148.81 mm, 195.00 mm): Symbol C20 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(156.19 mm, 170.00 mm): Symbol C14 Pin 1 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(160.00 mm, 170.00 mm): Symbol C14 [C]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(160.00 mm, 180.00 mm): Symbol C15 [C]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Capacitor_SMD'
+    ; warning
+    @(160.00 mm, 195.00 mm): Symbol C12 [C]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.81 mm, 180.00 mm): Symbol C15 Pin 2 [Passive, Line]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(163.81 mm, 195.00 mm): Symbol C12 Pin 2 [Passive, Line]
+[footprint_link_issues]: The current configuration does not include the footprint library 'Connector_Audio'
+    ; warning
+    @(180.00 mm, 180.00 mm): Symbol J2 [TRRS_PJ-3X4S]
+[lib_symbol_mismatch]: Symbol 'TRRS_PJ-3X4S' doesn't match copy in library 'scramble_hat'
+    ; warning
+    @(180.00 mm, 180.00 mm): Symbol J2 [TRRS_PJ-3X4S]
+[endpoint_off_grid]: Symbol pin or wire end off connection grid
+    ; warning
+    @(187.62 mm, 177.46 mm): Symbol J2 Pin 1 [T_LOUT, Passive, Line]
+
+***** Sheet /Codec/
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 78.73 mm): Symbol J3 Pin 1 [Pin_1, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 81.27 mm): Symbol J3 Pin 2 [Pin_2, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 83.81 mm): Symbol J3 Pin 3 [Pin_3, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 86.35 mm): Symbol J3 Pin 4 [Pin_4, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 88.89 mm): Symbol J3 Pin 5 [Pin_5, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 91.43 mm): Symbol J3 Pin 6 [Pin_6, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 93.97 mm): Symbol J3 Pin 7 [Pin_7, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 128.73 mm): Symbol J4 Pin 1 [Pin_1, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 131.27 mm): Symbol J4 Pin 2 [Pin_2, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 133.81 mm): Symbol J4 Pin 3 [Pin_3, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 136.35 mm): Symbol J4 Pin 4 [Pin_4, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 138.89 mm): Symbol J4 Pin 5 [Pin_5, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 141.43 mm): Symbol J4 Pin 6 [Pin_6, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(64.92 mm, 143.97 mm): Symbol J4 Pin 7 [Pin_7, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(130.00 mm, 101.19 mm): Symbol R1 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(130.00 mm, 108.81 mm): Symbol R1 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(137.00 mm, 103.73 mm): Symbol R2 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(137.00 mm, 111.35 mm): Symbol R2 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(145.00 mm, 76.19 mm): Symbol C1 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(145.00 mm, 83.81 mm): Symbol C1 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(145.00 mm, 91.19 mm): Symbol R3 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(145.00 mm, 98.81 mm): Symbol R3 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(145.00 mm, 109.19 mm): Symbol R4 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(145.00 mm, 116.81 mm): Symbol R4 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(150.00 mm, 76.19 mm): Symbol C2 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(150.00 mm, 83.81 mm): Symbol C2 Pin 2 [Passive, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(154.84 mm, 89.84 mm): Symbol U1 Pin 1 [AD0, Input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(154.84 mm, 94.92 mm): Symbol U1 Pin 3 [CCLK, Input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(154.84 mm, 97.46 mm): Symbol U1 Pin 4 [MCLK/TDMIN, Input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(154.84 mm, 105.08 mm): Symbol U1 Pin 9 [DSDIN, Input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(154.84 mm, 110.16 mm): Symbol U1 Pin 11 [ASDOUT/AD1, Output, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(158.00 mm, 121.19 mm): Symbol C9 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(158.00 mm, 128.81 mm): Symbol C9 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(158.65 mm, 115.24 mm): Symbol U1 Pin 7 [DGND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(158.65 mm, 115.24 mm): Symbol U1 Pin 7 [DGND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(159.92 mm, 84.76 mm): Symbol U1 Pin 5 [DVDD, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(161.00 mm, 121.19 mm): Symbol C7 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(161.00 mm, 128.81 mm): Symbol C7 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(161.19 mm, 115.24 mm): Symbol U1 Pin 18 [AGND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(161.19 mm, 115.24 mm): Symbol U1 Pin 18 [AGND, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(163.73 mm, 115.24 mm): Symbol U1 Pin 25 [PGND, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(163.73 mm, 115.24 mm): Symbol U1 Pin 25 [PGND, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(165.00 mm, 76.19 mm): Symbol C3 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(165.00 mm, 83.81 mm): Symbol C3 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(166.27 mm, 115.24 mm): Symbol U1 Pin 19 [VMID, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(168.00 mm, 121.19 mm): Symbol C8 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(168.00 mm, 128.81 mm): Symbol C8 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(168.81 mm, 115.24 mm): Symbol U1 Pin 20 [ADCVREF, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(170.08 mm, 84.76 mm): Symbol U1 Pin 17 [AVDD, Power input, Line]
+[power_pin_not_driven]: Input Power pin not driven by any Output Power pins
+    ; error
+    @(170.08 mm, 84.76 mm): Symbol U1 Pin 17 [AVDD, Power input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(171.35 mm, 115.24 mm): Symbol U1 Pin 14 [DACVREF, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(175.00 mm, 76.19 mm): Symbol FB1 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(175.00 mm, 83.81 mm): Symbol FB1 Pin 2 [Passive, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(175.16 mm, 89.84 mm): Symbol U1 Pin 24 [MIC1P, Input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(175.16 mm, 92.38 mm): Symbol U1 Pin 23 [MIC1N, Input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(175.16 mm, 94.92 mm): Symbol U1 Pin 22 [MIC2P, Input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(175.16 mm, 97.46 mm): Symbol U1 Pin 21 [MIC2N, Input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(185.00 mm, 76.19 mm): Symbol C4 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(185.00 mm, 83.81 mm): Symbol C4 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(190.00 mm, 76.19 mm): Symbol C5 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(190.00 mm, 83.81 mm): Symbol C5 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(195.00 mm, 76.19 mm): Symbol C6 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(195.00 mm, 83.81 mm): Symbol C6 Pin 2 [Passive, Line]
+
+***** Sheet /Input/
+[pin_not_connected]: Pin not connected
+    ; error
+    @(204.19 mm, 88.00 mm): Symbol D1 Pin 1 [K, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(204.19 mm, 95.00 mm): Symbol D2 Pin 1 [K, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(211.81 mm, 88.00 mm): Symbol D1 Pin 2 [A, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(211.81 mm, 95.00 mm): Symbol D2 Pin 2 [A, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(212.92 mm, 145.00 mm): Symbol J5 Pin 1 [Pin_1, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(212.92 mm, 147.54 mm): Symbol J5 Pin 2 [Pin_2, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(215.00 mm, 91.81 mm): Symbol C10 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(215.00 mm, 98.81 mm): Symbol C11 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(216.19 mm, 173.00 mm): Symbol D8 Pin 1 [K, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(222.00 mm, 74.19 mm): Symbol R5 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(222.00 mm, 78.19 mm): Symbol R6 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(222.00 mm, 81.81 mm): Symbol R5 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(222.00 mm, 85.81 mm): Symbol R6 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(223.81 mm, 173.00 mm): Symbol D8 Pin 2 [A, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(224.19 mm, 145.00 mm): Symbol F1 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(231.81 mm, 145.00 mm): Symbol F1 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(235.00 mm, 141.19 mm): Symbol D6 Pin 2 [A, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(235.00 mm, 148.81 mm): Symbol D6 Pin 1 [K, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(240.00 mm, 141.19 mm): Symbol C16 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(240.00 mm, 148.81 mm): Symbol C16 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(240.00 mm, 175.81 mm): Symbol R12 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(245.00 mm, 141.19 mm): Symbol C17 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(245.00 mm, 148.81 mm): Symbol C17 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(245.65 mm, 170.73 mm): Symbol OK1 Pin 1 [A, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(249.92 mm, 146.778 mm): Symbol Q1 Pin 1 [G, Input, Line]
+[pin_not_driven]: Input pin not driven by any Output pins
+    ; error
+    @(249.92 mm, 146.778 mm): Symbol Q1 Pin 1 [G, Input, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.16 mm, 82.38 mm): Symbol J1 Pin 1 [XLR_1, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.16 mm, 84.92 mm): Symbol J1 Pin 2 [XLR_2, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.16 mm, 87.46 mm): Symbol J1 Pin 3 [XLR_3, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.16 mm, 92.54 mm): Symbol J1 Pin T [JACK_T, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.16 mm, 95.08 mm): Symbol J1 Pin R [JACK_R, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(250.16 mm, 97.62 mm): Symbol J1 Pin S [JACK_S, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(257.54 mm, 139.92 mm): Symbol Q1 Pin 3 [D, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(257.54 mm, 150.08 mm): Symbol Q1 Pin 2 [S, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(262.00 mm, 134.19 mm): Symbol R11 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(262.00 mm, 138.19 mm): Symbol C18 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(262.00 mm, 141.81 mm): Symbol R11 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(262.00 mm, 145.81 mm): Symbol C18 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(262.19 mm, 138.00 mm): Symbol D7 Pin 1 [K, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(269.81 mm, 138.00 mm): Symbol D7 Pin 2 [A, Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(270.00 mm, 163.19 mm): Symbol R13 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(270.00 mm, 170.81 mm): Symbol R13 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(272.00 mm, 191.19 mm): Symbol C19 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(272.00 mm, 198.81 mm): Symbol C19 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(276.00 mm, 196.19 mm): Symbol R14 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(276.00 mm, 203.81 mm): Symbol R14 Pin 2 [Passive, Line]
+
+***** Sheet /Output/
+[pin_not_connected]: Pin not connected
+    ; error
+    @(125.00 mm, 203.19 mm): Symbol C13 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(125.00 mm, 210.81 mm): Symbol C13 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(126.19 mm, 200.00 mm): Symbol R7 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(133.81 mm, 200.00 mm): Symbol R7 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(141.19 mm, 170.00 mm): Symbol R9 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(141.19 mm, 180.00 mm): Symbol R10 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(141.19 mm, 195.00 mm): Symbol C20 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(148.81 mm, 170.00 mm): Symbol R9 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(148.81 mm, 180.00 mm): Symbol R10 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(148.81 mm, 195.00 mm): Symbol C20 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(156.19 mm, 170.00 mm): Symbol C14 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(156.19 mm, 180.00 mm): Symbol C15 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(156.19 mm, 195.00 mm): Symbol C12 Pin 1 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(163.81 mm, 170.00 mm): Symbol C14 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(163.81 mm, 180.00 mm): Symbol C15 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(163.81 mm, 195.00 mm): Symbol C12 Pin 2 [Passive, Line]
+[pin_not_connected]: Pin not connected
+    ; error
+    @(187.62 mm, 185.08 mm): Symbol J2 Pin 4 [S_MIC, Passive, Line]
+
+ ** ERC messages: 273  Errors 161  Warnings 112
+
+ ** Ignored checks:
+    - Global label only appears once in the schematic
+    - Four connection points are joined together
+    - SPICE model issue
+    - Assigned footprint doesn't match footprint filters
