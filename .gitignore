@@ -2,3 +2,9 @@
 .history/
 agents.md
 project.md
+
+# KiCad-generated / per-user churn
+scramble_hat-backups/
+*.kicad_prl
+*-drc.rpt
+*-erc.rpt

@@ -1,0 +1,34 @@
+Comment,Designator,Qty,MPN,Manufacturer,Footprint,LCSC Part #,JLCPCB Class,Mount,DNP,Unit Price USD,Notes
+ES8389 audio codec,U1,1,ES8389,Everest Semi,QFN-24 3x3 P0.35mm,C22380673,Extended,SMT,,0.88,Custom 0.35mm-pitch footprint (scramble_hat lib)
+Ultra-low-noise LDO 3.3V,U2,1,TPS7A2033PDBVR,Texas Instruments,SOT-23-5,C2862740,Extended,SMT,,0.19,AVDD analog LDO; +5V -> +3V3_A
+Optocoupler,OK1,1,LTV-817S-TA1-D,Lite-On,SO-4,C114603,Extended,SMT,,0.09,PHANTOM_EN isolation
+P-MOSFET 150V,Q1,1,Si2325DS-T1-GE3,Vishay,SOT-23,C60773,Extended,SMT,,0.42,Phantom switch; gate clamped by D7
+"ESD array, 4-line","D1, D2",2,"PESD3V3L4UG,115",Nexperia,SOT-353,C70500,Extended,SMT,,0.61,
+TVS 58V 600W bidir,D6,1,SMBJ58CA,Littelfuse,SMA,C151267,Extended,SMT,,0.55,PoE rail clamp
+Zener 12V 0.5W,D7,1,MMSZ5242BT1G,onsemi,SOD-123,C82050,Basic/Ext,SMT,,0.02,Q1 gate clamp
+"LED, red",D8,1,KP-2012EC,Kingbright,0805,C598272,Extended,SMT,,0.08,Phantom-present indicator
+PPTC 100mA hold / 60V,F1,1,1812L010/60DR,Littelfuse,1812,C207062,Extended,SMT,,0.30,"True 1812 (matches board land); 100mA hold/300mA trip. prior 0ZCJ0005FF2E/C194141 is 1206 - wrong size"
+Ferrite 600R @100MHz,FB1,1,BLM18AG601SN1D,Murata,0603,C19330,Basic/Ext,SMT,,0.15,AVDD ferrite
+100nF 50V X7R,"C1, C3, C4",3,CC0402KRX7R9BB104,Yageo,0402,C131394,Basic,SMT,,0.003,
+1uF 25V X5R,"C2, C5, C7, C8, C9, C12, C13, C20, C21",9,CL05A105KA5NQNC,Samsung,0402,C52923,Basic,SMT,,0.003,
+10uF 16V X5R,C6,1,GRM21BR61C106KE15L,Murata,0805,C77075,Basic,SMT,,0.022,AVDD bulk
+1uF 100V X7R,"C10, C11",2,CC0805KKX7R0BB105,Yageo,0805,C5370002,Extended,SMT,,0.064,XLR coupling (phantom side); 100V for margin
+22uF 10V X5R,"C14, C15",2,CL21A226MPQNNNE,Samsung,0805,C29277,Extended,SMT,,0.021,HP coupling
+10uF 100V X7S,C16,1,CL32Y106KCV6PNE,Samsung,1210,C22380050,Extended,SMT,,0.73,X7S derates ~half under DC bias
+100nF 100V X7R,C17,1,0805B104K101NT,Fenghua,0805,C89258,Extended,SMT,,0.006,
+1uF 100V X7R,C18,1,CL31B105KCHNNNE,Samsung,1206,C13832,Extended,SMT,,0.04,Q1 gate soft-start
+2.2nF Y2 250VAC,C19,1,DE2E3KY222MA3BM02F,Murata,Disc TH,C161048,n/a,TH,DNP,0.09,Hand-solder (TH); JLCPCB SMT line won't place
+2.2uF 10V X5R,C22,1,CL05A225KP5NSNC,Samsung,0402,C107369,Basic,SMT,,0.002,LDO output cap
+10k 1%,"R1, R2, R3, R4",4,RC0402FR-0710KL,Yageo,0402,,Basic,SMT,,0.02,I2C pullups + AD0/AD1 straps
+6.81k 1%,"R5, R6",2,RC0805FR-076K81L,Yageo,0805,,Basic,SMT,,0.10,Phantom feed pair
+2.2k 1%,R7,1,RC0402FR-072K2L,Yageo,0402,,Basic,SMT,,0.02,Mic bias
+33R 1%,"R9, R10",2,RC0402FR-0733RL,Yageo,0402,,Basic,SMT,,0.02,HP output series
+100k 1%,"R11, R13",2,RC0402FR-07100KL,Yageo,0402,,Basic,SMT,,0.02,Q1 gate pullup / opto pulldown
+1k 1%,R12,1,RC0402FR-071KL,Yageo,0402,,Basic,SMT,,0.02,Opto LED current limit (switch -> opto)
+0R,R14,1,RC0402JR-070RL,Yageo,0402,,n/a,DNP,DNP,0.02,Ground-lift jumper - not populated (true DNP)
+33k 1%,R16,1,RC0805FR-0733KL,Yageo,0805,,Basic,SMT,,0.10,D8 LED current limit
+XLR / 6.35mm combo jack,J1,1,NCJ6FA-H,Neutrik,TH combo,C368458,n/a,TH,DNP,1.82,"Hand-solder (TH). Switched combo (A type), ~$1.82 vs FI $4.34; jack switch contacts unused"
+3.5mm TRRS jack,J2,1,SJ-3524-SMT-TR,CUI,SMT,,n/a,SMT,DNP,1.40,"SJ-3524 family OUT OF STOCK at LCSC+JLCPCB (2026-06) - hand-solder from DigiKey 281298 (base -TR, 67k stock; any color variant fits)"
+"1x7 female socket, 8.5mm","J3, J4",2,PM254V-11-07-H85,XFCN,PinSocket_1x07_2.54mm TH,C2832270,THT,TH,,0.05,"JLCPCB THT-assembled (enable THT components at checkout); 8.5mm stack height"
+1x2 pin header,J5,1,PRPC002SAAN-RC,Sullins,PinHeader_1x02_2.54mm TH,,n/a,TH,DNP,0.30,PoE module connection - hand-solder
+SPDT slide switch (phantom on/off),SW1,1,SS-12D00-G3,SOFNG,SW_Slide_SS-12D00-G3 TH,C22355741,THT,TH,,0.04,"JLCPCB THT-assembled (enable THT components); 2.54mm-pitch SPDT - verify footprint pitch vs purchased part"

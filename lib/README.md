@@ -23,4 +23,4 @@ Generic passive footprints (`R_0402`, `C_0402`, etc.) come from the standard KiC
 
 ## Sourcing
 
-Where each footprint and 3D model came from is documented in `BOM.md` at the project root.
+Footprints and LCSC part numbers for each component are documented in `BOM.csv` at the project root.
