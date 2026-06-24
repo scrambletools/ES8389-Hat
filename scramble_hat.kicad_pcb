@@ -3492,7 +3492,7 @@
 		(layer "F.Cu")
 		(uuid "d1d587a7-45ea-407a-a627-853c57fa8e84")
 		(at 114.5448 86.2076)
-		(descr "Murata DE2B3KY222 series Y2 disc safety cap, 7.5 mm lead pitch, ~11 mm body diameter, through-hole. Per Murata datasheet for DE2B3KY222KN3AM and similar DE2B3K family.")
+		(descr "Murata DE2-SA series Y2 disc safety cap (DE2E3SA222MA3BT02F, LCSC C524537), 2.2 nF 250 VAC X1/Y2, 7.5 mm lead pitch, through-hole. Replaces EOL DE2E3KY222MA3BM02F (same 7.5 mm-pitch land). Per Murata DE2-SA datasheet.")
 		(tags "capacitor Y2 disc through-hole safety")
 		(property "Reference" "C19"
 			(at 1.9904 -1.397 0)

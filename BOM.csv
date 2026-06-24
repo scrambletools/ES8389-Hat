@@ -17,7 +17,7 @@ Ferrite 600R @100MHz,FB1,1,BLM18AG601SN1D,Murata,0603,C19330,Basic/Ext,SMT,,0.15
 10uF 100V X7S,C16,1,CL32Y106KCV6PNE,Samsung,1210,C22380050,Extended,SMT,,0.73,X7S derates ~half under DC bias
 100nF 100V X7R,C17,1,0805B104K101NT,Fenghua,0805,C89258,Extended,SMT,,0.006,
 1uF 100V X7R,C18,1,CL31B105KCHNNNE,Samsung,1206,C13832,Extended,SMT,,0.04,Q1 gate soft-start
-2.2nF Y2 250VAC,C19,1,DE2E3KY222MA3BM02F,Murata,Disc TH,C161048,n/a,TH,DNP,0.09,Hand-solder (TH); JLCPCB SMT line won't place
+2.2nF Y2 250VAC,C19,1,DE2E3SA222MA3BT02F,Murata,Disc TH,C524537,n/a,TH,DNP,0.11,"Hand-solder (TH); JLCPCB SMT line won't place. Replaces EOL DE2E3KY222MA3BM02F (same 7.5mm-pitch land); LCSC C524537 ~$0.11@5+. DS: mouser.com/datasheet/3/76/2/DE2_SA_T0_F_E.pdf"
 2.2uF 10V X5R,C22,1,CL05A225KP5NSNC,Samsung,0402,C107369,Basic,SMT,,0.002,LDO output cap
 10k 1%,"R1, R2, R3, R4",4,RC0402FR-0710KL,Yageo,0402,,Basic,SMT,,0.02,I2C pullups + AD0/AD1 straps
 6.81k 1%,"R5, R6",2,RC0805FR-076K81L,Yageo,0805,,Basic,SMT,,0.10,Phantom feed pair
