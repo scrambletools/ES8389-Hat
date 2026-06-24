@@ -16,13 +16,26 @@ Transform {
   ]
 }
 
-# --- slide actuator (light-grey nub on top, ~2.8 x 1.6 x 1.4 mm) ---
+# --- slide actuator stem: 2.0 x 2.0 mm square post per SS-12D07-VG/GA/PA datasheet (stem = 2 mm wide
+#     in both the front and side views). The datasheet leaves the actuator height (L / "VG=") blank as it
+#     is the variant dimension; set to 3.0 mm total protrusion (2.6 mm post + 0.4 mm tip),
+#     body top at z=3.4 -> stem tip at z=6.4.
 Transform {
-  translation 0 0 4.1
+  translation 0 0 4.7
   children [
     Shape {
       appearance Appearance { material Material { diffuseColor 0.62 0.62 0.62 ambientIntensity 0.3 shininess 0.3 } }
-      geometry Box { size 2.8 1.6 1.4 }
+      geometry Box { size 2.0 2.0 2.6 }
+    }
+  ]
+}
+# --- notched tip detail (0.4 mm, light grey) ---
+Transform {
+  translation 0 0 6.2
+  children [
+    Shape {
+      appearance Appearance { material Material { diffuseColor 0.55 0.55 0.55 ambientIntensity 0.3 shininess 0.3 } }
+      geometry Box { size 2.0 2.0 0.4 }
     }
   ]
 }
