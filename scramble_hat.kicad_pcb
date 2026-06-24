@@ -8788,6 +8788,17 @@
 			(pintype "passive")
 			(uuid "98ee835a-b650-45e0-b515-08d4cbad0ff5")
 		)
+		(model "${KIPRJMOD}/lib/3dmodels/SS-12D00-G3.wrl"
+			(offset
+				(xyz 0 0 0)
+			)
+			(scale
+				(xyz 0.3937 0.3937 0.3937)
+			)
+			(rotate
+				(xyz 0 0 0)
+			)
+		)
 		(embedded_fonts no)
 	)
 	(footprint "Capacitor_SMD:C_0402_1005Metric"

@@ -42,4 +42,15 @@
 		(drill 0.9)
 		(layers "*.Cu" "*.Mask")
 	)
+	(model "${KIPRJMOD}/lib/3dmodels/SS-12D00-G3.wrl"
+		(offset
+			(xyz 0 0 0)
+		)
+		(scale
+			(xyz 0.3937 0.3937 0.3937)
+		)
+		(rotate
+			(xyz 0 0 0)
+		)
+	)
 )
