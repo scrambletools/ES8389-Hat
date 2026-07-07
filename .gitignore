@@ -13,3 +13,6 @@ scramble_hat-backups/
 # Footprint models in lib/3dmodels/ and case geometry in case/ stay tracked.
 /*.step
 /*.stp
+
+# Plasticity autosave churn (keep manual/history snapshots)
+*_autosave.plasticity
