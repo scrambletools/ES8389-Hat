@@ -8,3 +8,8 @@ scramble_hat-backups/
 *.kicad_prl
 *-drc.rpt
 *-erc.rpt
+
+# Board-level STEP exports (whole-board kicad-cli output).
+# Footprint models in lib/3dmodels/ and case geometry in case/ stay tracked.
+/*.step
+/*.stp
