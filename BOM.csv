@@ -1,7 +1,7 @@
 Comment,Designator,Qty,MPN,Manufacturer,Footprint,LCSC Part #,JLCPCB Class,Mount,DNP,Unit Price USD,Notes
 ES8389 audio codec,U1,1,ES8389,Everest Semi,QFN-24 3x3 P0.35mm,C22380673,Extended,SMT,,0.88,Custom 0.35mm-pitch footprint (scramble_hat lib)
 Ultra-low-noise LDO 3.3V,U2,1,TPS7A2033PDBVR,Texas Instruments,SOT-23-5,C2862740,Extended,SMT,,0.19,AVDD analog LDO; +5V -> +3V3_A
-Optocoupler,OK1,1,LTV-817S-TA1-D,Lite-On,SO-4,C114603,Extended,SMT,,0.09,PHANTOM_EN isolation
+Optocoupler 80V,OK1,1,"TLP291(GB-TP,SE)",Toshiba,SOP-4-1.27mm,C393895,Extended,SMT,,0.12,PHANTOM_EN isolation; 80V Vceo for 46-57V PoE rail (replaces LTV-817S 35V - under-rated). Corrected pinout pin3=E/pin4=C
 P-MOSFET 150V,Q1,1,Si2325DS-T1-GE3,Vishay,SOT-23,C60773,Extended,SMT,,0.42,Phantom switch; gate clamped by D7
 "ESD array, 4-line","D1, D2",2,"PESD3V3L4UG,115",Nexperia,SOT-353,C70500,Extended,SMT,,0.61,
 TVS 58V 600W bidir,D6,1,SMBJ58CA,Littelfuse,SMA,C151267,Extended,SMT,,0.55,PoE rail clamp
@@ -14,7 +14,6 @@ Ferrite 600R @100MHz,FB1,1,BLM18AG601SN1D,Murata,0603,C19330,Basic/Ext,SMT,,0.15
 10uF 16V X5R,C6,1,GRM21BR61C106KE15L,Murata,0805,C77075,Basic,SMT,,0.022,AVDD bulk
 1uF 100V X7R,"C10, C11",2,CC0805KKX7R0BB105,Yageo,0805,C5370002,Extended,SMT,,0.064,XLR coupling (phantom side); 100V for margin
 22uF 10V X5R,"C14, C15",2,CL21A226MPQNNNE,Samsung,0805,C29277,Extended,SMT,,0.021,HP coupling
-10uF 100V X7S,C16,1,CL32Y106KCV6PNE,Samsung,1210,C22380050,Extended,SMT,,0.73,X7S derates ~half under DC bias
 100nF 100V X7R,C17,1,0805B104K101NT,Fenghua,0805,C89258,Extended,SMT,,0.006,
 1uF 100V X7R,C18,1,CL31B105KCHNNNE,Samsung,1206,C13832,Extended,SMT,,0.04,Q1 gate soft-start
 2.2nF Y2 250VAC,C19,1,DE2E3SA222MA3BT02F,Murata,Disc TH,C524537,n/a,TH,DNP,0.11,"Hand-solder (TH); JLCPCB SMT line won't place. Replaces EOL DE2E3KY222MA3BM02F (same 7.5mm-pitch land); LCSC C524537 ~$0.11@5+. DS: mouser.com/datasheet/3/76/2/DE2_SA_T0_F_E.pdf"
