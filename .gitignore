@@ -14,5 +14,7 @@ scramble_hat-backups/
 /*.step
 /*.stp
 
-# Plasticity autosave churn (keep manual/history snapshots)
+# Plasticity churn — keep only the main model (case/hat-trik-case.plasticity);
+# ignore autosave and the rolling hour/day/prev history snapshots.
 *_autosave.plasticity
+case/plasticity/
