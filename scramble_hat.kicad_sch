@@ -10,7 +10,7 @@
 		(comment 1 "Audio I/O hat for Waveshare ESP32-P4-ETH carrier. See agents.md for editing rules.")
 	)
 	(lib_symbols)
-	(text "scramble_hat — hierarchical schematic\n\nCodec: ES8389 + decoupling + carrier sockets + I2C straps\nInput: Neutrik combo + ESD + isolated phantom + status LED + Y-cap + DNP ground-lift\nOutput: TRRS jack + output coupling + electret mic bias\n\nAll inter-sheet connectivity via global labels (visible in each sub-sheet).\nFor AI-agent editing rules see agents.md."
+	(text "Scramble Hat-trik — Hierarchical Schematic\n\nCodec: ES8389 + decoupling + carrier sockets + I2C straps\nInput: Neutrik combo + ESD + isolated phantom + status LED + Y-cap + DNP ground-lift\nOutput: TRRS jack + output coupling + electret mic bias\n\nAll inter-sheet connectivity via global labels (visible in each sub-sheet)."
 		(exclude_from_sim no)
 		(at 30 80 0)
 		(effects
