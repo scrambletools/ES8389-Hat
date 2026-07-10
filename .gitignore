@@ -9,6 +9,11 @@ scramble_hat-backups/
 *-drc.rpt
 *-erc.rpt
 
+# Fabrication Toolkit / kicad-jlcpcb-tools plugin output — redundant with fab/
+# (regenerate via tools/gen_fab.py instead)
+production/
+fabrication-toolkit-options.json
+
 # Board-level STEP exports (whole-board kicad-cli output).
 # Footprint models in lib/3dmodels/ and case geometry in case/ stay tracked.
 /*.step
