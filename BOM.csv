@@ -1,7 +1,7 @@
 Comment,Designator,Qty,MPN,Manufacturer,Footprint,LCSC Part #,JLCPCB Class,Mount,DNP,Unit Price USD,Notes
 ES8389 audio codec,U1,1,ES8389,Everest Semi,QFN-24 3x3 P0.35mm,C22380673,Extended,SMT,,0.712,Custom 0.35mm-pitch footprint (scramble_hat lib)
 Ultra-low-noise LDO 3.3V,U2,1,TPS7A2033PDBVR,Texas Instruments,SOT-23-5,C2862740,Extended,SMT,,0.199,AVDD analog LDO; +5V -> +3V3_A
-Optocoupler 80V,OK1,1,"TLP291(GB-TP,SE)",Toshiba,SOP-4-1.27mm,C393895,Extended,SMT,,0.116,PHANTOM_EN isolation; 80V Vceo for 46-57V PoE rail (replaces LTV-817S 35V - under-rated). Corrected pinout pin3=E/pin4=C
+Optocoupler 80V,OK1,1,EL3H7(C)(TA)-G,Everlight,SOP-4-1.27mm,C92243,Extended,SMT,,0.04,PHANTOM_EN isolation; 80V Vceo for 46-57V PoE rail; SOP-4 1.27mm drop-in for short-supply TLP291. CTR 200-400%. Pinout pin1=A pin2=K pin3=E pin4=C
 P-MOSFET 150V,Q1,1,Si2325DS-T1-GE3,Vishay,SOT-23,C60773,Extended,SMT,,0.473,Phantom switch; gate clamped by D7
 "ESD array, 4-line","D1, D2",2,"PESD3V3L4UG,115",Nexperia,SOT-353,C70500,Extended,SMT,,0.1724,
 TVS 58V 600W bidir,D6,1,SMBJ58CA,Littelfuse,SMA,C151267,Extended,SMT,,0.121,PoE rail clamp
@@ -16,9 +16,9 @@ Ferrite 600R @100MHz,FB1,1,BLM18AG601SN1D,Murata,0603,C19330,Basic/Ext,SMT,,0.02
 22uF 10V X5R,"C14, C15",2,CL21A226MPQNNNE,Samsung,0805,C29277,Extended,SMT,,0.1735,HP coupling
 100nF 100V X7R,C17,1,0805B104K101NT,Fenghua,0805,C89258,Extended,SMT,,0.0269,
 1uF 100V X7R,C18,1,CL31B105KCHNNNE,Samsung,1206,C13832,Extended,SMT,,0.129,Q1 gate soft-start
-2.2nF Y2 250VAC,C19,1,JY222M2FY5VS7LE,JEC,Disc TH,C389727,Extended,TH,,0.037,"JLCPCB THT-assembled (safety-cap wave-solder). Y2 300VAC 2.2nF, same 7.5mm land. Replaces DE2E3SA222MA3BT02F/C524537 (low stock)"
+2.2nF Y2 300VAC,C19,1,DE2E3SA222MA3BT02F,Murata,Disc TH 7.5mm,C524537,n/a,TH,DNP,0.087,"Hand-solder by user (Y2 safety cap; NOT JLC-assembled). X1/Y2 300/250VAC 2.2nF 7.5mm disc; source DigiKey/Mouser (Murata DE2E3) or TDK CS11-E2GA222MYNSA equivalent"
 2.2uF 10V X5R,C22,1,CL05A225KP5NSNC,Samsung,0402,C107369,Basic,SMT,,0.0076,LDO output cap
-10k 1%,"R1, R2, R3, R4",4,RC0402FR-0710KL,Yageo,0402,C25744,Basic,SMT,,0.0022,I2C pullups + AD0/AD1 straps
+10k 1%,"R1, R2, R3, R4",4,RC0402FR-0710KL,Yageo,0402,C60490,Extended,SMT,,0.0059,"I2C pullups + AD0/AD1 straps. C# was C25744 = UNI-ROYAL 0402WGF1002TCE (Basic) but now OUT OF STOCK; switched to the matching Yageo MPN C60490 (in stock ~92k). Verify Basic/Extended badge in JLC UI"
 6.81k 1%,"R5, R6",2,ERJ6ENF6811V,Panasonic,0805,C3025619,Extended,SMT,,0.0082,Phantom feed pair (no JLCPCB Basic for 6.81k 0805)
 2.2k 1%,R7,1,RC0402FR-072K2L,Yageo,0402,C25879,Basic,SMT,,0.0014,Mic bias
 33R 1%,"R9, R10",2,RC0402FR-0733RL,Yageo,0402,C25105,Basic,SMT,,0.0059,HP output series

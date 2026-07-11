@@ -6,8 +6,8 @@ PoE-tapped phantom power, TRRS output, I²S/I²C to the carrier).
 
 - **Board size:** ~51.4 × 21.7 mm
 - **Layers:** 4 (F.Cu / In1.Cu / In2.Cu / B.Cu)
-- **Assembly:** 29 BOM line items (49 placements/board) machine-assembled;
-  3 connectors hand-soldered; 1 part unpopulated.
+- **Assembly:** 28 BOM line items (48 placements/board) machine-assembled;
+  3 connectors + 1 Y-cap hand-soldered; 1 part unpopulated.
 
 > Regenerate everything with **`python3 tools/gen_fab.py`** (see the bottom).
 > These files are committed from the design in the repo root; don't hand-edit them.
@@ -59,15 +59,15 @@ Parts carrying a rotation correction (double-check these first): `U1`, `U2`, `Q1
 | Set | Parts | Notes |
 |---|---|---|
 | **JLCPCB — SMT** | everything not listed below | machine-placed |
-| **JLCPCB — THT** (enable at checkout) | `J3`, `J4` (carrier sockets), `SW1` (slide switch), `J6` (I²C header), `C19` (Y2 cap) | wave/hand-soldered by JLCPCB; C19 is from their safety-cap library |
-| **You — hand-solder after arrival** | `J1` (XLR/¼" combo jack), `J2` (TRRS jack), `J5` (PoE header) | J2 is out of stock at LCSC (source separately); J5 is where you wire the PoE module |
+| **JLCPCB — THT** (enable at checkout) | `J3`, `J4` (carrier sockets), `SW1` (slide switch), `J6` (I²C header) | wave/hand-soldered by JLCPCB |
+| **You — hand-solder after arrival** | `J1` (XLR/¼" combo jack), `J2` (TRRS jack), `J5` (PoE header), `C19` (Y2 safety cap) | J2 is out of stock at LCSC (source separately); J5 is where you wire the PoE module; C19 is a user-sourced 7.5 mm Y2 disc (Murata DE2E3 / TDK CS11) — kept off the JLC line so its niche stock never blocks the order |
 | **Unpopulated (DNP)** | `R14` | 0 Ω ground-lift jumper, deliberately left off |
 
 ---
 
 ## Sourcing notes
 - **F1** polyfuse (`1812L010/60DR`, C207062) — stock is thin (~120); re-check at order time. It's the voltage-critical 60 V part — do not substitute a lower-voltage 1812.
-- Extended-library parts (U1, TLP291, TVS, C19, R16, the 6.81 k, J6, etc.) each carry JLCPCB's one-time extended-part fee.
+- Extended-library parts (U1, EL3H7 opto, TVS, R16, the 6.81 k, J6, etc.) each carry JLCPCB's one-time extended-part fee.
 - Per-board BOM parts ≈ **$8** at qty-10 pricing (dominated by the J1/J2 jacks); budget more for the one-time extended fees.
 
 ---
