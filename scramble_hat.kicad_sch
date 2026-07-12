@@ -21,17 +21,6 @@
 		)
 		(uuid "5cc7c1bf-c8a3-4cca-9c6e-08fa64f1b3ed")
 	)
-	(text "claude-insert-below — sentinel for Edit anchors. DO NOT DELETE."
-		(exclude_from_sim no)
-		(at 200 200 0)
-		(effects
-			(font
-				(size 0.5 0.5)
-			)
-			(justify left top)
-		)
-		(uuid "8f5cc087-9a68-4fd6-8978-bb9fd95c1808")
-	)
 	(sheet
 		(at 30 30)
 		(size 50 25)

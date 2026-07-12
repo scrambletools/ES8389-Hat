@@ -409,17 +409,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "claude-insert-below — sentinel for Edit anchors. DO NOT DELETE."
-		(exclude_from_sim no)
-		(at 191.77 22.098 0)
-		(effects
-			(font
-				(size 0.5 0.5)
-			)
-			(justify left top)
-		)
-		(uuid "985e4b98-ef0c-4f2a-a8fe-4e6dd6c412ba")
-	)
 	(wire
 		(pts
 			(xy 228.092 103.886) (xy 223.774 103.886)
@@ -1013,14 +1002,14 @@
 			)
 		)
 		(property "Value" "TRRS PJ-3X4S (CTIA, bottom-side)"
-			(at 243.332 110.236 0)
+			(at 205.994 109.728 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify right bottom)
+				(justify left bottom)
 			)
 		)
 		(property "Footprint" "Connector_Audio:Jack_3.5mm_CUI_SJ-3524-SMT_Horizontal"
@@ -1036,6 +1025,7 @@
 		)
 		(property "Datasheet" "https://www.sameskydevices.com/product/interconnect/connectors/audio-connectors/jacks/sj-3524-smt-tr"
 			(at 216.154 101.346 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1046,6 +1036,7 @@
 		)
 		(property "Description" ""
 			(at 216.154 101.346 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1087,7 +1078,7 @@
 		(dnp no)
 		(uuid "11223344-aabb-4ccd-8eef-aabbccddee01")
 		(property "Reference" "R9"
-			(at 189.992 101.394 0)
+			(at 189.484 101.6 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1097,7 +1088,7 @@
 			)
 		)
 		(property "Value" "33R"
-			(at 189.992 107.394 0)
+			(at 189.992 107.442 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1117,8 +1108,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25105.html"
 			(at 189.992 104.394 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1129,6 +1121,7 @@
 		)
 		(property "Description" ""
 			(at 189.992 104.394 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1164,7 +1157,7 @@
 		(dnp no)
 		(uuid "22334455-bbcc-4dde-8ff0-bbccddeeff02")
 		(property "Reference" "R10"
-			(at 190.5 115.618 0)
+			(at 190.5 115.316 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1174,7 +1167,7 @@
 			)
 		)
 		(property "Value" "33R"
-			(at 190.5 121.618 0)
+			(at 190.5 121.666 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1194,8 +1187,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25105.html"
 			(at 190.5 118.618 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1206,6 +1200,7 @@
 		)
 		(property "Description" ""
 			(at 190.5 118.618 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1241,7 +1236,7 @@
 		(dnp no)
 		(uuid "33445566-ccdd-4eef-8001-ccddeeff0003")
 		(property "Reference" "C14"
-			(at 189.738 71.93 0)
+			(at 189.484 70.866 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1251,7 +1246,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 189.738 77.93 0)
+			(at 190.246 78.74 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1271,8 +1266,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C29277.html"
 			(at 189.738 74.93 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1283,6 +1279,7 @@
 		)
 		(property "Description" ""
 			(at 189.738 74.93 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1318,7 +1315,7 @@
 		(dnp no)
 		(uuid "44556677-ddee-4ff0-8112-ddeeff000004")
 		(property "Reference" "C15"
-			(at 189.738 58.214 0)
+			(at 189.992 57.404 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1328,7 +1325,7 @@
 			)
 		)
 		(property "Value" "22uF"
-			(at 189.738 64.214 0)
+			(at 190.5 64.77 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1348,8 +1345,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C29277.html"
 			(at 189.738 61.214 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1360,6 +1358,7 @@
 		)
 		(property "Description" ""
 			(at 189.738 61.214 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1395,7 +1394,7 @@
 		(dnp no)
 		(uuid "55667788-eeff-4001-8223-eeff00000005")
 		(property "Reference" "C12"
-			(at 240.35 58.482 0)
+			(at 240.538 57.404 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1405,7 +1404,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 240.35 64.482 0)
+			(at 240.538 65.532 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1425,8 +1424,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 240.35 61.482 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1437,6 +1437,7 @@
 		)
 		(property "Description" ""
 			(at 240.35 61.482 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1472,7 +1473,7 @@
 		(dnp no)
 		(uuid "66778899-ff00-4112-8334-ff0000000006")
 		(property "Reference" "C20"
-			(at 189.738 85.646 0)
+			(at 189.738 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1482,7 +1483,7 @@
 			)
 		)
 		(property "Value" "1uF"
-			(at 189.738 91.646 0)
+			(at 190.246 92.71 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1502,8 +1503,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 189.738 88.646 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1514,6 +1516,7 @@
 		)
 		(property "Description" ""
 			(at 189.738 88.646 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1549,7 +1552,7 @@
 		(dnp no)
 		(uuid "778899aa-0011-4223-8445-001122000007")
 		(property "Reference" "R7"
-			(at 223.774 70.406 0)
+			(at 223.774 70.358 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1559,7 +1562,7 @@
 			)
 		)
 		(property "Value" "2.2k (mic bias)"
-			(at 223.774 76.406 0)
+			(at 225.298 76.962 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1579,8 +1582,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25879.html"
 			(at 223.774 73.406 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1591,6 +1595,7 @@
 		)
 		(property "Description" ""
 			(at 223.774 73.406 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1626,25 +1631,25 @@
 		(dnp no)
 		(uuid "8899aabb-1122-4334-8556-112233000008")
 		(property "Reference" "C13"
-			(at 257.27 75.66 0)
+			(at 257.048 69.596 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1uF (bias filter)"
-			(at 254.27 75.66 0)
+			(at 262.382 77.978 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
@@ -1658,8 +1663,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 255.27 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -1670,6 +1676,7 @@
 		)
 		(property "Description" ""
 			(at 255.27 73.66 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects

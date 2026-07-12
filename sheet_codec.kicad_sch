@@ -1528,17 +1528,6 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "claude-insert-below — sentinel for Edit anchors. DO NOT DELETE."
-		(exclude_from_sim no)
-		(at 240 60 0)
-		(effects
-			(font
-				(size 0.5 0.5)
-			)
-			(justify left top)
-		)
-		(uuid "a29fb226-31eb-4622-8bb0-8b31a4b0b1d0")
-	)
 	(wire
 		(pts
 			(xy 336.55 142.494) (xy 340.868 142.494)
@@ -1821,7 +1810,7 @@
 	)
 	(wire
 		(pts
-			(xy 225.298 144.018) (xy 234.696 144.272)
+			(xy 221.996 137.922) (xy 231.394 138.176)
 		)
 		(stroke
 			(width 0)
@@ -1991,7 +1980,7 @@
 	)
 	(wire
 		(pts
-			(xy 225.298 151.638) (xy 234.696 151.75)
+			(xy 222.25 150.764) (xy 231.648 150.876)
 		)
 		(stroke
 			(width 0)
@@ -2011,7 +2000,7 @@
 	)
 	(wire
 		(pts
-			(xy 225.298 158.496) (xy 234.696 158.75)
+			(xy 222.25 163.322) (xy 231.648 163.576)
 		)
 		(stroke
 			(width 0)
@@ -2141,7 +2130,7 @@
 	)
 	(wire
 		(pts
-			(xy 314.198 157.48) (xy 308.596 157.554)
+			(xy 313.944 154.94) (xy 308.342 155.014)
 		)
 		(stroke
 			(width 0)
@@ -2161,7 +2150,7 @@
 	)
 	(wire
 		(pts
-			(xy 296.672 157.48) (xy 300.976 157.554)
+			(xy 296.418 154.94) (xy 300.722 155.014)
 		)
 		(stroke
 			(width 0)
@@ -2527,7 +2516,7 @@
 	)
 	(global_label "DACVREF"
 		(shape passive)
-		(at 242.316 144.272 0)
+		(at 239.014 138.176 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2536,7 +2525,7 @@
 		)
 		(uuid "1ba9f37d-3fcb-43cf-8c86-2856d24a8b32")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.316 144.272 0)
+			(at 239.014 138.176 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2703,7 +2692,7 @@
 	)
 	(global_label "AGND"
 		(shape passive)
-		(at 225.298 151.638 0)
+		(at 222.25 150.764 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2712,7 +2701,7 @@
 		)
 		(uuid "3dd2e126-8619-4bda-b33e-2b49028ecfc7")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.298 151.638 0)
+			(at 222.25 150.764 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -2989,7 +2978,7 @@
 	)
 	(global_label "+5V"
 		(shape passive)
-		(at 296.672 157.48 180)
+		(at 296.418 154.94 180)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -2998,7 +2987,7 @@
 		)
 		(uuid "6e6558d3-def8-4991-927f-4f1f34acc182")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 296.672 157.48 0)
+			(at 296.418 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3033,7 +3022,7 @@
 	)
 	(global_label "ADCVREF"
 		(shape passive)
-		(at 242.316 158.75 0)
+		(at 239.268 163.576 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3042,7 +3031,7 @@
 		)
 		(uuid "7557f4c7-2e38-484d-ae4b-35b4e220b07d")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.316 158.75 0)
+			(at 239.268 163.576 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3231,7 +3220,7 @@
 	)
 	(global_label "AGND"
 		(shape passive)
-		(at 225.298 158.496 0)
+		(at 222.25 163.322 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3240,7 +3229,7 @@
 		)
 		(uuid "9fb539ac-adfd-43b7-8490-1442a8dd9c7e")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.298 158.496 0)
+			(at 222.25 163.322 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3407,7 +3396,7 @@
 	)
 	(global_label "AGND"
 		(shape passive)
-		(at 314.198 157.48 0)
+		(at 313.944 154.94 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3416,7 +3405,7 @@
 		)
 		(uuid "b7a4b716-19fe-498a-9d5a-4b8644f255c5")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 314.198 157.48 0)
+			(at 313.944 154.94 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3561,7 +3550,7 @@
 	)
 	(global_label "VMID"
 		(shape passive)
-		(at 242.316 151.75 0)
+		(at 239.268 150.876 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3570,7 +3559,7 @@
 		)
 		(uuid "c817ab57-580e-4177-8d50-0e75f0979a56")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 242.316 151.75 0)
+			(at 239.268 150.876 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3671,7 +3660,7 @@
 	)
 	(global_label "AGND"
 		(shape passive)
-		(at 225.298 144.018 0)
+		(at 221.996 137.922 0)
 		(effects
 			(font
 				(size 1.27 1.27)
@@ -3680,7 +3669,7 @@
 		)
 		(uuid "d63c0b4b-00c0-4819-98a4-702b3fb586ac")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 225.298 144.018 0)
+			(at 221.996 137.922 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3989,7 +3978,7 @@
 		(dnp no)
 		(uuid "0af8cdd3-6535-45fd-87cb-98753ee56923")
 		(property "Reference" "FB1"
-			(at 312.166 94.996 90)
+			(at 311.658 88.138 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4000,7 +3989,7 @@
 			)
 		)
 		(property "Value" "600R@100MHz"
-			(at 307.086 88.138 90)
+			(at 307.848 94.996 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4021,8 +4010,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19330.html"
 			(at 313.172 91.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4033,6 +4023,7 @@
 		)
 		(property "Description" ""
 			(at 313.172 91.86 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4069,7 +4060,7 @@
 		(dnp no)
 		(uuid "0bdba2b1-b38c-4764-adb7-e2be7018d521")
 		(property "Reference" "J4"
-			(at 213.868 105.928 0)
+			(at 213.614 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4079,7 +4070,7 @@
 			)
 		)
 		(property "Value" "Carrier RIGHT 1-7"
-			(at 207.772 131.064 0)
+			(at 208.28 129.794 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4101,6 +4092,7 @@
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C2832270.html"
 			(at 213.868 112.268 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4111,6 +4103,7 @@
 		)
 		(property "Description" ""
 			(at 213.868 112.268 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4151,7 +4144,7 @@
 	)
 	(symbol
 		(lib_id "scramble_hat:C")
-		(at 238.506 144.272 270)
+		(at 235.204 138.176 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4161,29 +4154,29 @@
 		(dnp no)
 		(uuid "141848c8-9e03-48d1-b238-a071ddbc3e3f")
 		(property "Reference" "C9"
-			(at 240.506 146.272 0)
+			(at 235.966 134.366 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1uF"
-			(at 237.506 146.272 0)
+			(at 236.982 142.494 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 242.316 145.242 0)
+			(at 239.014 139.146 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4193,8 +4186,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 238.506 144.272 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
+			(at 235.204 138.176 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4204,7 +4198,8 @@
 			)
 		)
 		(property "Description" ""
-			(at 238.506 144.272 0)
+			(at 235.204 138.176 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4230,7 +4225,7 @@
 	)
 	(symbol
 		(lib_id "scramble_hat:C")
-		(at 304.786 157.554 90)
+		(at 304.532 155.014 90)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4240,29 +4235,29 @@
 		(dnp no)
 		(uuid "1ffc415a-7c28-495b-a5bb-ba82a6ec8d87")
 		(property "Reference" "C21"
-			(at 303.308 150.4 0)
+			(at 302.768 150.622 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1uF"
-			(at 302.786 159.554 0)
+			(at 302.514 159.004 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 304.786 157.554 0)
+			(at 304.532 155.014 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4272,8 +4267,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 304.786 157.554 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
+			(at 304.532 155.014 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4283,7 +4279,8 @@
 			)
 		)
 		(property "Description" ""
-			(at 304.786 157.554 0)
+			(at 304.532 155.014 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4330,7 +4327,7 @@
 			)
 		)
 		(property "Value" "ES8389"
-			(at 286.512 104.648 0)
+			(at 286.766 133.858 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4353,6 +4350,7 @@
 		)
 		(property "Datasheet" "https://www.everest-semi.com/pdf/ES8389%20PB.pdf"
 			(at 270.764 118.618 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4363,6 +4361,7 @@
 		)
 		(property "Description" ""
 			(at 270.764 118.618 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4467,7 +4466,7 @@
 		(dnp no)
 		(uuid "3bf36e67-3449-4b7e-8c50-65f8c8657efe")
 		(property "Reference" "U2"
-			(at 349.488 135.574 0)
+			(at 346.71 137.922 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4478,7 +4477,7 @@
 			)
 		)
 		(property "Value" "TPS7A2033"
-			(at 349.488 159.574 0)
+			(at 351.536 157.48 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4557,7 +4556,7 @@
 		(dnp no)
 		(uuid "4349fdf4-c190-407a-a6d8-a6e1c97dc97f")
 		(property "Reference" "R3"
-			(at 204.724 99.028 90)
+			(at 204.216 94.488 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4567,7 +4566,7 @@
 			)
 		)
 		(property "Value" "10k (AD0 strap)"
-			(at 205.74 94.488 90)
+			(at 204.724 99.568 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4587,8 +4586,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 204.724 97.028 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4599,6 +4599,7 @@
 		)
 		(property "Description" ""
 			(at 204.724 97.028 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4634,25 +4635,25 @@
 		(dnp no)
 		(uuid "4bb2a320-ff70-4fe6-8882-3346fc68c1f5")
 		(property "Reference" "C6"
-			(at 315.436 131.286 0)
+			(at 314.452 125.222 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "10uF"
-			(at 312.436 131.286 0)
+			(at 315.976 133.35 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
@@ -4666,8 +4667,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C77075.html"
 			(at 313.436 129.286 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4678,6 +4680,7 @@
 		)
 		(property "Description" ""
 			(at 313.436 129.286 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4713,25 +4716,25 @@
 		(dnp no)
 		(uuid "60fe25f4-3d4f-4b7b-a69a-30f9b5a89a9e")
 		(property "Reference" "C3"
-			(at 278.606 80.486 0)
+			(at 277.876 73.914 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100nF"
-			(at 275.606 80.486 0)
+			(at 279.654 82.804 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
@@ -4745,8 +4748,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C131394.html"
 			(at 276.606 78.486 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4757,6 +4761,7 @@
 		)
 		(property "Description" ""
 			(at 276.606 78.486 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4792,7 +4797,7 @@
 		(dnp no)
 		(uuid "6e979597-0fd0-42f5-821d-e19832f00ca4")
 		(property "Reference" "R4"
-			(at 204.724 89.63 90)
+			(at 204.47 85.09 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4802,7 +4807,7 @@
 			)
 		)
 		(property "Value" "10k (AD1 strap)"
-			(at 205.486 85.09 90)
+			(at 205.486 90.17 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4822,8 +4827,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 204.724 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4834,6 +4840,7 @@
 		)
 		(property "Description" ""
 			(at 204.724 87.63 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4869,25 +4876,25 @@
 		(dnp no)
 		(uuid "7c0afecf-8539-438b-8d52-9102f27a4b58")
 		(property "Reference" "C1"
-			(at 247.11 79.47 0)
+			(at 246.38 72.898 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "100nF"
-			(at 244.11 79.47 0)
+			(at 248.158 81.788 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
@@ -4901,8 +4908,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C131394.html"
 			(at 245.11 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4913,6 +4921,7 @@
 		)
 		(property "Description" ""
 			(at 245.11 77.47 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4938,7 +4947,7 @@
 	)
 	(symbol
 		(lib_id "scramble_hat:C")
-		(at 238.506 151.75 270)
+		(at 235.458 150.876 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -4948,29 +4957,29 @@
 		(dnp no)
 		(uuid "866364d7-ea6a-4dd1-bcd5-a08076cb7204")
 		(property "Reference" "C7"
-			(at 240.506 153.75 0)
+			(at 236.22 147.066 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1uF"
-			(at 237.506 153.75 0)
+			(at 236.728 154.686 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 242.316 152.72 0)
+			(at 239.268 151.846 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4980,8 +4989,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 238.506 151.75 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
+			(at 235.458 150.876 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -4991,7 +5001,8 @@
 			)
 		)
 		(property "Description" ""
-			(at 238.506 151.75 0)
+			(at 235.458 150.876 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5027,25 +5038,25 @@
 		(dnp no)
 		(uuid "89cde409-a6c2-4d9a-a848-d9ffb6cdf977")
 		(property "Reference" "C22"
-			(at 302.546 167.164 0)
+			(at 302.26 165.354 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "2.2uF"
-			(at 302.546 171.164 0)
+			(at 302.26 172.974 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
@@ -5059,8 +5070,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C107369.html"
 			(at 304.546 169.164 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5071,6 +5083,7 @@
 		)
 		(property "Description" ""
 			(at 304.546 169.164 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5106,7 +5119,7 @@
 		(dnp no)
 		(uuid "ad7de9fc-bbaf-4112-9432-fd504e11b70f")
 		(property "Reference" "R1"
-			(at 204.724 72.104 90)
+			(at 204.724 67.31 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5116,7 +5129,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 204.724 68.104 90)
+			(at 204.724 72.644 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5136,8 +5149,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 204.724 70.104 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5148,6 +5162,7 @@
 		)
 		(property "Description" ""
 			(at 204.724 70.104 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5183,25 +5198,25 @@
 		(dnp no)
 		(uuid "b7af96e7-4910-4371-a2c1-fd3c3b16e3b4")
 		(property "Reference" "C2"
-			(at 247.618 92.17 0)
+			(at 246.38 86.106 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1uF"
-			(at 244.618 92.17 0)
+			(at 247.396 93.98 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
@@ -5215,8 +5230,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 245.618 90.17 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5227,6 +5243,7 @@
 		)
 		(property "Description" ""
 			(at 245.618 90.17 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5252,7 +5269,7 @@
 	)
 	(symbol
 		(lib_id "scramble_hat:C")
-		(at 238.506 158.75 270)
+		(at 235.458 163.576 270)
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
@@ -5262,29 +5279,29 @@
 		(dnp no)
 		(uuid "c34a6211-24f0-470f-9987-cb2ac508c149")
 		(property "Reference" "C8"
-			(at 240.506 160.75 0)
+			(at 236.474 159.512 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1uF"
-			(at 237.506 160.75 0)
+			(at 236.982 167.64 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
-			(at 242.316 159.72 0)
+			(at 239.268 164.546 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5294,8 +5311,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
-			(at 238.506 158.75 0)
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
+			(at 235.458 163.576 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5305,7 +5323,8 @@
 			)
 		)
 		(property "Description" ""
-			(at 238.506 158.75 0)
+			(at 235.458 163.576 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5342,7 +5361,7 @@
 		(dnp no)
 		(uuid "d0032826-4e66-445e-8a69-2bb5333fd16c")
 		(property "Reference" "J3"
-			(at 157.988 105.928 0)
+			(at 157.734 106.68 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5352,7 +5371,7 @@
 			)
 		)
 		(property "Value" "Carrier LEFT 1-7"
-			(at 151.13 131.826 0)
+			(at 152.654 130.556 0)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5374,6 +5393,7 @@
 		)
 		(property "Datasheet" "https://www.lcsc.com/product-detail/C2832270.html"
 			(at 157.988 112.268 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5384,6 +5404,7 @@
 		)
 		(property "Description" ""
 			(at 157.988 112.268 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5466,7 +5487,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C124378.html"
 			(at 244.602 190.5 0)
 			(hide yes)
 			(show_name no)
@@ -5521,7 +5542,7 @@
 		(dnp no)
 		(uuid "e6f687c7-be45-4caf-aa7f-7f0be59d224a")
 		(property "Reference" "R2"
-			(at 204.724 80.74 90)
+			(at 204.47 76.454 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5531,7 +5552,7 @@
 			)
 		)
 		(property "Value" "10k"
-			(at 204.724 76.74 90)
+			(at 204.724 81.026 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5551,8 +5572,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 204.724 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5563,6 +5585,7 @@
 		)
 		(property "Description" ""
 			(at 204.724 78.74 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5598,25 +5621,25 @@
 		(dnp no)
 		(uuid "f17a76b7-e852-4ba4-8e91-2c89d0d748c3")
 		(property "Reference" "C5"
-			(at 315.436 119.682 0)
+			(at 314.452 113.792 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Value" "1uF"
-			(at 312.436 119.682 0)
+			(at 315.468 121.92 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
+				(justify right)
 			)
 		)
 		(property "Footprint" "Capacitor_SMD:C_0402_1005Metric"
@@ -5630,8 +5653,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 313.436 117.682 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5642,6 +5666,7 @@
 		)
 		(property "Description" ""
 			(at 313.436 117.682 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5677,7 +5702,7 @@
 		(dnp no)
 		(uuid "fd5e13c7-25d4-4abd-89fa-557eedd8b437")
 		(property "Reference" "C4"
-			(at 313.182 108.712 0)
+			(at 311.912 101.092 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5688,7 +5713,7 @@
 			)
 		)
 		(property "Value" "100nF"
-			(at 310.134 101.854 90)
+			(at 310.896 109.22 90)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5709,8 +5734,9 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C131394.html"
 			(at 313.436 105.57 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
@@ -5721,6 +5747,7 @@
 		)
 		(property "Description" ""
 			(at 313.436 105.57 0)
+			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
 			(effects
