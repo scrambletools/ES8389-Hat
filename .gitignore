@@ -8,6 +8,7 @@ scramble_hat-backups/
 *.kicad_prl
 *-drc.rpt
 *-erc.rpt
+*.lck
 
 # Fabrication Toolkit / kicad-jlcpcb-tools plugin output — redundant with fab/
 # (regenerate via tools/gen_fab.py instead)
