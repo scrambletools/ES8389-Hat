@@ -4,7 +4,7 @@ Production files for **JLCPCB** (PCB fab + PCBA assembly). Board is an ES8389
 audio codec HAT for the Waveshare ESP32-P4-Nano carrier (XLR/¼" combo input,
 PoE-tapped phantom power, TRRS output, I²S/I²C to the carrier).
 
-- **Board size:** ~51.4 × 21.7 mm
+- **Board size:** ~51.4 × 21.1 mm
 - **Layers:** 4 (F.Cu / In1.Cu / In2.Cu / B.Cu)
 - **Assembly:** 28 BOM line items (48 placements/board) machine-assembled;
   3 connectors + 1 Y-cap hand-soldered; 1 part unpopulated.
