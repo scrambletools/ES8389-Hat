@@ -570,7 +570,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C29277.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -727,7 +727,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25105.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -884,7 +884,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C20142753.html"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -1076,7 +1076,7 @@
 				(pins "T" "R" "TN" "S")
 			)
 		)
-		(attr smd exclude_from_pos_files)
+		(attr smd)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 3.1 8.6)
@@ -2166,7 +2166,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C29277.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2313,7 +2313,7 @@
 			)
 		)
 		(property "Value" "I2C 3V3/AGND/SDA/SCL"
-			(at 0 10 90)
+			(at 6.724935 1.299847 0)
 			(layer "F.Fab")
 			(uuid "f1195b72-a521-49e9-ab93-954fee4ad7c8")
 			(effects
@@ -2323,7 +2323,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C124378.html"
 			(at 0 0 90)
 			(layer "F.Fab")
 			(hide yes)
@@ -2585,7 +2585,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2742,7 +2742,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25741.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -2899,7 +2899,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C107369.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3424,7 +3424,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -1.38 -1.38)
@@ -3621,7 +3621,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C524537.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3654,7 +3654,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_circle
 			(center 0 0)
@@ -3761,7 +3761,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25741.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3918,7 +3918,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60485.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -3961,7 +3961,7 @@
 				(pins "1" "2")
 			)
 		)
-		(attr smd exclude_from_pos_files dnp)
+		(attr smd dnp)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start -0.153641 -0.38)
@@ -4110,7 +4110,7 @@
 				(pins "G" "1" "2" "3" "T" "R" "S")
 			)
 		)
-		(attr through_hole exclude_from_pos_files)
+		(attr through_hole)
 		(duplicate_pad_numbers_are_jumpers no)
 		(fp_line
 			(start 21.235 15.105)
@@ -4725,7 +4725,7 @@
 				)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25105.html"
 			(at 0 0 0)
 			(layer "F.Fab")
 			(hide yes)
@@ -5047,7 +5047,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C92243.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -5394,7 +5394,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -5952,7 +5952,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6112,7 +6112,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C11702.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6275,7 +6275,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6435,7 +6435,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6595,7 +6595,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6755,7 +6755,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -6915,7 +6915,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C3025619.html"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -7369,7 +7369,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C131394.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -7529,7 +7529,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C25879.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -7689,7 +7689,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -7849,7 +7849,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C60490.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -8009,7 +8009,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -8169,7 +8169,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C89258.html"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -8329,7 +8329,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C13832.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -8489,7 +8489,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C19330.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -8649,7 +8649,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5370002.html"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -8942,7 +8942,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -9102,7 +9102,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C77075.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -9262,7 +9262,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C131394.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -9809,7 +9809,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C5370002.html"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -9969,7 +9969,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" "https://www.kingbright.com/attachments/file/psearch/000/00/20160808bak/KP-2012EC(Ver.20A).pdf"
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C34499.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -10968,7 +10968,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -11128,7 +11128,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C131394.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
@@ -11288,7 +11288,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C3025619.html"
 			(at 0 0 90)
 			(layer "B.Fab")
 			(hide yes)
@@ -11732,7 +11732,7 @@
 				(justify mirror)
 			)
 		)
-		(property "Datasheet" ""
+		(property "Datasheet" "https://www.lcsc.com/product-detail/C52923.html"
 			(at 0 0 0)
 			(layer "B.Fab")
 			(hide yes)
