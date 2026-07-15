@@ -76,6 +76,34 @@ The codec carries audio over **I²S** and is controlled over **I²C**. Its I²C 
 set by the AD0/AD1 straps (R3/R4); R1/R2 are the SDA/SCL pull-ups. Typical firmware is
 **ESPHome** or **ESP-ADF** configured for an external I²S codec.
 
+## Microphone setups
+
+Two validated configurations, using the AVB endpoint firmware's controls
+(ES8389 PGA via the entity's Mic Gain control; digital gain via the talker's
+`ESP_AVB_TALKER_MIC_DIGITAL_GAIN_DB` Kconfig, which also engages an always-on
+DC-block ahead of the gain):
+
+| | Condenser (phantom) | Dynamic |
+|---|---|---|
+| Phantom switch (SW1) | ON | OFF |
+| PoE feed (J5) | connected + powered | **disconnect the PoE module** (see note) |
+| ES8389 PGA gain | +36 dB | +36 dB (ceiling is +36.5 dB) |
+| Digital gain (Kconfig) | 0 dB | **+20 dB** |
+
+Notes:
+
+- **Unpowered PoE module injects mains hum.** With the PoE module installed but
+  not powered, the input picks up ~60 Hz mains at near full scale even with SW1
+  off — remove/disconnect the module (J5 feed) when running without PoE.
+  A future revision should isolate the phantom network from the input when the
+  rail is absent.
+- Dynamic microphones sit ~20–30 dB below condenser output; the ES8389 PGA
+  ceiling (+36.5 dB) alone leaves them ~-40 dBFS, hence the digital gain stage.
+- Mic Gain writes above the PGA ceiling **clamp silently** — verify the value
+  the response reports, not the value requested.
+- The input is wired differential (MIC1P/1N) at the codec; both mic types run
+  balanced through the XLR.
+
 ## Repository layout
 
 | Path | Contents |
