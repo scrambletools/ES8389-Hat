@@ -27,3 +27,5 @@ Ferrite 600R @100MHz,FB1,0603,C19330
 "1x7 female socket, 8.5mm","J3, J4",PinSocket_1x07_2.54mm TH,C2832270
 1x4 pin header,J6,PinHeader_1x04_2.54mm TH,C124378
 SPDT slide switch (phantom on/off),SW1,SW_Slide_SS-12D00-G3 TH,C22355741
+PhotoMOS SSR 400V (tap disconnect),"K1, K2",SOP-4 3.8x4.1mm,C2890344
+470R 1% (PhotoMOS LED limit),"R17, R18",0402,C114877
