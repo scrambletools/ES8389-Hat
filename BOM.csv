@@ -9,8 +9,8 @@ Zener 12V 0.5W,D7,1,MMSZ5242BT1G,onsemi,SOD-123,C82050,Basic/Ext,SMT,,0.041,Q1 g
 "LED, white",D8,1,KT-0805W,Hubei KENTO,0805,C34499,Basic,SMT,,0.02,Phantom-present indicator (white); KT-0805W Basic in-stock
 PPTC 100mA hold / 60V,F1,1,1812L010/60DR,Littelfuse,1812,C207062,Extended,SMT,,0.215,True 1812 (matches board land); 100mA hold/300mA trip. prior 0ZCJ0005FF2E/C194141 is 1206 - wrong size
 Ferrite 600R @100MHz,FB1,1,BLM18AG601SN1D,Murata,0603,C19330,Basic/Ext,SMT,,0.022,AVDD ferrite
-100nF 50V X7R,"C1, C3, C4",3,CC0402KRX7R9BB104,Yageo,0402,C131394,Basic,SMT,,0.0097,
-1uF 25V X5R,"C2, C5, C7, C8, C9, C12, C13, C20, C21",9,CL05A105KA5NQNC,Samsung,0402,C52923,Basic,SMT,,0.0267,
+100nF 50V X7R,"C1, C3, C4, C27, C28, C29",6,CC0402KRX7R9BB104,Yageo,0402,C131394,Basic,SMT,,0.0097,
+1uF 25V X5R,"C2, C5, C7, C8, C9, C12, C13, C20, C21, C25, C26",11,CL05A105KA5NQNC,Samsung,0402,C52923,Basic,SMT,,0.0267,
 10uF 16V X5R,C6,1,GRM21BR61C106KE15L,Murata,0805,C77075,Basic,SMT,,0.147,AVDD bulk
 1uF 100V X7R,"C10, C11",2,CC0805KKX7R0BB105,Yageo,0805,C5370002,Extended,SMT,,0.1756,XLR coupling (phantom side); 100V for margin
 22uF 10V X5R,"C14, C15",2,CL21A226MPQNNNE,Samsung,0805,C29277,Extended,SMT,,0.1735,HP coupling
@@ -20,9 +20,9 @@ Ferrite 600R @100MHz,FB1,1,BLM18AG601SN1D,Murata,0603,C19330,Basic/Ext,SMT,,0.02
 2.2uF 10V X5R,C22,1,CL05A225KP5NSNC,Samsung,0402,C107369,Basic,SMT,,0.0076,LDO output cap
 10k 1%,"R1, R2, R3, R4",4,RC0402FR-0710KL,Yageo,0402,C60490,Extended,SMT,,0.0059,"I2C pullups + AD0/AD1 straps. C# was C25744 = UNI-ROYAL 0402WGF1002TCE (Basic) but now OUT OF STOCK; switched to the matching Yageo MPN C60490 (in stock ~92k). Verify Basic/Extended badge in JLC UI"
 6.81k 1%,"R5, R6",2,ERJ6ENF6811V,Panasonic,0805,C3025619,Extended,SMT,,0.0082,Phantom feed pair (no JLCPCB Basic for 6.81k 0805)
-2.2k 1%,R7,1,RC0402FR-072K2L,Yageo,0402,C25879,Basic,SMT,,0.0014,Mic bias
+2.2k 1%,"R7, R20",2,RC0402FR-072K2L,Yageo,0402,C25879,Basic,SMT,,0.0014,Mic bias
 33R 1%,"R9, R10",2,RC0402FR-0733RL,Yageo,0402,C25105,Basic,SMT,,0.0059,HP output series
-100k 1%,"R11, R13",2,RC0402FR-07100KL,Yageo,0402,C25741,Basic,SMT,,0.0016,Q1 gate pullup / opto pulldown
+100k 1%,"R11, R13, R19",3,RC0402FR-07100KL,Yageo,0402,C25741,Basic,SMT,,0.0016,Q1 gate pullup / opto pulldown
 1k 1%,R12,1,RC0402FR-071KL,Yageo,0402,C11702,Basic,SMT,,0.005,Opto LED current limit (switch -> opto)
 0R,R14,1,RC0402JR-070RL,Yageo,0402,,n/a,DNP,DNP,0.02,Ground-lift jumper - not populated (true DNP)
 15k 1% 1/4W,R16,1,AC0805FR-7W15KL,Yageo,0805,C20142753,Extended,SMT,,0.008,D8 LED current-limit (bright ~3mA); 1/4W anti-surge ~193mW at 57V rail
@@ -34,3 +34,10 @@ XLR / 6.35mm combo jack,J1,1,NCJ6FA-H,Neutrik,TH combo,C368458,n/a,TH,DNP,2.607,
 SPDT slide switch (phantom on/off),SW1,1,SS-12D00-G3,SOFNG,SW_Slide_SS-12D00-G3 TH,C22355741,THT,TH,,0.0448,"Manual phantom on/off; drives OK1 (Q1 enable) + K1/K2 PhotoMOS LEDs via R12/R17/R18. Existing footprint."
 PhotoMOS SSR 400V (tap disconnect),"K1, K2",2,KAQY214S,Cosmo,SOP-4 3.8x4.1mm,C2890344,Extended,SMT,,0.68,"1-form-A AC/bidirectional MOSFET-output SSR; K1 breaks V_PoE tap, K2 breaks PGND tap, when phantom off (kills dynamic-mic buzz). Input LED off PHANTOM_SW via R17/R18. VERIFY pinout 1=A/2=K/3,4=load per C2890344; verify JLCPCB SMT-assembly vs hand-solder."
 470R 1% (PhotoMOS LED limit),"R17, R18",2,RC0402FR-07470RL,Yageo,0402,C114877,Basic,SMT,,0.0052,"K1/K2 input-LED current limit (~4.5mA at 3V3; KAQY214S Vf 1.2V, IFON<=3mA). Yageo RC0402FR family match; 306k stock; JLCPCB Economic-eligible."
+Op-amp Hi-Z buffer (RRIO CMOS),U3,1,TLV9061IDBVR,Texas Instruments,SOT-23-5,C398358,Extended,SMT,,0.096,"Guitar 1/4in Hi-Z buffer (~1M in), unity follower on +5V; drives mux U4. Pinout 1=OUT 2=V- 3=IN+ 4=IN- 5=V+"
+Analog switch triple SPDT,U4,1,74HC4053PW,Nexperia,TSSOP-16,C5648,Extended,SMT,,0.202,"Mic/instrument mux: MIC1P/MIC1N source = XLR mic (no plug) or buffered guitar + PGND ref (plug). Select=DET (jack ring). +5V; 2 of 3 sections used (Z spare). VERIFY TSSOP-16 rotation in JLCPCB preview"
+1M 1%,R21,1,0402WGF1004TCE,UNI-ROYAL,0402,C26083,Basic,SMT,,0.007,Guitar buffer input bias -> ~1M input impedance
+220k 1%,"R22, R23",2,0402WGF2203TCE,UNI-ROYAL,0402,C25767,Basic,SMT,,0.007,Guitar buffer VBIAS mid-rail divider (+5V/AGND)
+100R 1%,R24,1,0402WGF1000TCE,UNI-ROYAL,0402,C25076,Basic,SMT,,0.007,Guitar buffer output isolation
+0.22uF 16V X7R,C23,1,CL05B224KO5NNNC,Samsung,0402,C16772,Basic,SMT,,0.007,Guitar tip input AC-coupling (~0.7Hz with 1M)
+4.7uF 16V X5R,C24,1,CL10A475KO8NNNC,Samsung,0603,C19666,Basic,SMT,,0.029,Guitar buffer VBIAS bypass (AC-ground)
