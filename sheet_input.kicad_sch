@@ -2962,7 +2962,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+3V3"
 		(shape passive)
 		(at 312.7 154.76 0)
 		(effects
@@ -3072,7 +3072,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+3V3"
 		(shape passive)
 		(at 330.0 116.19 90)
 		(effects
@@ -3600,7 +3600,7 @@
 			)
 		)
 	)
-	(global_label "+5V"
+	(global_label "+3V3"
 		(shape passive)
 		(at 300.0 192.19 90)
 		(effects

@@ -2734,7 +2734,7 @@
 			)
 		)
 	)
-	(global_label "PHANTOM_EN"
+	(global_label "DET"
 		(shape passive)
 		(at 134.978 126.248 0)
 		(effects
