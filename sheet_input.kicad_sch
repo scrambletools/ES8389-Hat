@@ -3892,7 +3892,7 @@
 			)
 		)
 	)
-	(global_label "OK1_LED_A"
+	(global_label "PGND"
 		(shape passive)
 		(at 152.908 154.686 180)
 		(effects
@@ -4310,7 +4310,7 @@
 			)
 		)
 	)
-	(global_label "PGND"
+	(global_label "OK1_LED_A"
 		(shape passive)
 		(at 150.368 143.002 180)
 		(effects
