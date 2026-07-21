@@ -3,6 +3,8 @@
 agents.md
 project.md
 
+__pycache__/
+
 # KiCad-generated / per-user churn
 scramble_hat-backups/
 *.kicad_prl
