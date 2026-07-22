@@ -44,7 +44,7 @@ microphones — no separate supply.
 
 | Ref | Part | Function |
 |---|---|---|
-| **J1** | Neutrik NCJ6FA-H | XLR / ¼″ combo — balanced mic/line **input** *(hand-solder)* |
+| **J1** | Neutrik NCJ6FA-H | XLR / ¼″ combo — balanced mic/line **input**; ¼″ side is a Hi-Z **instrument input** with auto-detect *(hand-solder)* |
 | **J2** | CUI SJ-3524 TRRS | 3.5 mm headset — stereo **output** + electret mic *(hand-solder)* |
 | **J3, J4** | 1×7 sockets (8.5 mm) | mezzanine to the carrier — I²S, I²C, power |
 | **J5** | 1×2 header | **PoE** rail input from the carrier's PoE module *(hand-solder)* |
@@ -95,14 +95,38 @@ Notes:
 - **Unpowered PoE module injects mains hum.** With the PoE module installed but
   not powered, the input picks up ~60 Hz mains at near full scale even with SW1
   off — remove/disconnect the module (J5 feed) when running without PoE.
-  A future revision should isolate the phantom network from the input when the
-  rail is absent.
+  *(Addressed in the current design: SW1 off now opens both PoE-tap lines
+  through the K1/K2 PhotoMOS relays, so the module can stay connected.)*
 - Dynamic microphones sit ~20–30 dB below condenser output; the ES8389 PGA
   ceiling (+36.5 dB) alone leaves them ~-40 dBFS, hence the digital gain stage.
 - Mic Gain writes above the PGA ceiling **clamp silently** — verify the value
   the response reports, not the value requested.
 - The input is wired differential (MIC1P/1N) at the codec; both mic types run
   balanced through the XLR.
+
+## Instrument (guitar) input
+
+The ¼″ side of J1 feeds a high-impedance buffer (U3, ~500 kΩ input) into the
+codec's MIC1 channel through an analog mux (U4). Inserting a **mono TS plug**
+(guitar cable) shorts the jack's Ring contact to the Sleeve, pulling the
+`DET` line low — this automatically switches MIC1 from the XLR mic path to
+the buffered instrument path, and is readable by the carrier on **J3.7**
+(input, active-low = instrument present). Remove the plug (or use an XLR
+mic) and the input returns to the mic path. Phantom power never reaches the
+¼″ contacts.
+
+**Hardwiring a guitar without installing the Neutrik connector** — three
+connections on the J1 footprint, not two:
+
+| Guitar wire | Pad | Note |
+|---|---|---|
+| Tip (signal) | either **T** pad | the two T holes are the same net (`GTIP`); one is enough |
+| Sleeve (ground) | **S** pad | `PGND`; the larger **G** pad is the same net if a thicker wire is used |
+| — | jumper **R → S** | **required.** With no jack fitted, nothing shorts Ring to Sleeve, so `DET` stays high and the mux stays on the (absent) XLR path — the guitar would be silent. The jumper forces instrument mode. Remove it if the Neutrik is fitted later. |
+
+Use shielded cable for runs beyond a few centimetres (the input is high
+impedance and hums otherwise): signal on the center conductor to T, shield to
+S at the board end only.
 
 ## Repository layout
 
