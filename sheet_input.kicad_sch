@@ -4972,12 +4972,12 @@
 	)
 	(global_label "V_FILT"
 		(shape passive)
-		(at 333.262 82.678 0)
+		(at 333.262 82.678 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "c46a4fc6-41e9-49b0-a44d-c31013ba9c37")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
@@ -5478,12 +5478,12 @@
 	)
 	(global_label "Q1_GATE"
 		(shape passive)
-		(at 284.48 76.2 0)
+		(at 284.48 76.2 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
-			(justify left)
+			(justify right)
 		)
 		(uuid "edd719cb-2d7d-40c0-96b8-26eac5a746ee")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
