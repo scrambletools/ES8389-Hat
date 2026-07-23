@@ -128,6 +128,32 @@ Use shielded cable for runs beyond a few centimetres (the input is high
 impedance and hums otherwise): signal on the center conductor to T, shield to
 S at the board end only.
 
+## Mono amplifier output (hardwiring J2)
+
+To feed a mono amplifier that expects only tip and sleeve, skip the 3.5 mm jack
+and solder wires directly to the J2 footprint. **Careful:** J2 is wired as a
+**CTIA TRRS** headset jack, so the pad named `S` is *not* ground — on CTIA the
+physical sleeve is the microphone conductor.
+
+| Amp wire | Pad | Note |
+|---|---|---|
+| Tip (signal) | **T** | `HP_L_OUT` — left audio channel |
+| Sleeve (ground) | **TN** | `AGND` — audio ground. **Do not use the `S` pad**: it is the headset-mic line (`MIC2_RAW`) and carries mic bias — grounding it gives hum and injects into the MIC2 input. |
+
+Notes:
+
+- This taps the **left channel only**; have firmware output a mono downmix if
+  the source is stereo. Do **not** bridge the `T` and `R` pads to "sum" the
+  channels — that shorts the two DAC output stages into each other. (A passive
+  sum, if ever wanted, is a ~1 kΩ resistor from each of T and R into the amp
+  tip.)
+- An amp input (typically ≥10 kΩ) is a much lighter load than headphones, so
+  the 22 µF output coupling caps give essentially full bass extension here.
+- Unlike the J1 guitar hardwire, **no jumper is required** — J2 has no
+  plug-detect circuit.
+- Use shielded cable for runs beyond a few centimetres: center conductor to
+  `T`, shield to `TN` at the board end only.
+
 ## Repository layout
 
 | Path | Contents |
