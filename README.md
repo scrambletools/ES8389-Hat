@@ -122,7 +122,15 @@ connections on the J1 footprint, not two:
 |---|---|---|
 | Tip (signal) | either **T** pad | the two T holes are the same net (`GTIP`); one is enough |
 | Sleeve (ground) | **S** pad | `PGND`; the larger **G** pad is the same net if a thicker wire is used |
-| — | jumper **R → S** | **required.** With no jack fitted, nothing shorts Ring to Sleeve, so `DET` stays high and the mux stays on the (absent) XLR path — the guitar would be silent. The jumper forces instrument mode. Remove it if the Neutrik is fitted later. |
+| — | jumper **R → S** | **required.** With no jack fitted, nothing shorts Ring to Sleeve, so `DET` stays high and the mux stays on the (absent) XLR path — the guitar would be silent. The jumper forces instrument mode. Easiest form: populate **R27** (0805 0 Ω, DNP by default) — it shorts `DET` to `PGND` on-board. Remove/leave it off if the Neutrik is fitted. |
+
+**Eurorack module link (J7):** instead of hand-wiring, an optional 1×4
+female socket **J7** (8.5 mm stacking, same series as J3/J4, DNP by
+default) direct-mates the eurorack interposer's J8 header. Populate J7
+**only when J1 is absent** (they use the same input path), and populate
+**R27** with it (the module's input jack can't pull `DET` low). Pinout:
+1 = `GTIP`, 2 = `PGND`, 3 = `AGND`, 4 = `HP_L_OUT` — signals on the outer
+pins with both grounds between them.
 
 Use shielded cable for runs beyond a few centimetres (the input is high
 impedance and hums otherwise): signal on the center conductor to T, shield to

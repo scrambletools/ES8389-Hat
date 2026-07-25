@@ -3,7 +3,7 @@ ES8389 audio codec,U1,1,ES8389,Everest Semi,QFN-24 3x3 P0.35mm,C22380673,Extende
 Ultra-low-noise LDO 3.3V,U2,1,TPS7A2033PDBVR,Texas Instruments,SOT-23-5,C2862740,Extended,SMT,,0.199,AVDD analog LDO; +5V -> +3V3_A
 Optocoupler 80V,OK1,1,EL3H7(C)(TA)-G,Everlight,SOP-4-1.27mm,C92243,Extended,SMT,,0.04,PHANTOM_EN isolation; 80V Vceo for 46-57V PoE rail; SOP-4 1.27mm drop-in for short-supply TLP291. CTR 200-400%. Pinout pin1=A pin2=K pin3=E pin4=C
 P-MOSFET 150V,Q1,1,Si2325DS-T1-GE3,Vishay,SOT-23,C60773,Extended,SMT,,0.473,Phantom switch; gate clamped by D7
-"ESD diode, 3.3V bidir","D1, D2",2,PESD3V3L1BA-N,BORN,SOD-323,C316020,Extended,SMT,,0.053,"Mic-line ESD (was 4-line PESD3V3L4UG/C70500 using 1 of 4 channels). Bidirectional 2-pin: no polarity/rotation. Saves ~$0.14/board"
+"ESD diode, 3.3V bidir","D1, D2",2,PESD3V3L1BA-N,BORN,SOD-323,C316020,Extended,SMT,,0.053,Mic-line ESD (was 4-line PESD3V3L4UG/C70500 using 1 of 4 channels). Bidirectional 2-pin: no polarity/rotation. Saves ~$0.14/board
 TVS 58V 600W bidir,D6,1,SMBJ58CA,Littelfuse,SMA,C151267,Extended,SMT,,0.121,PoE rail clamp
 Zener 12V 0.5W,D7,1,MMSZ5242BT1G,onsemi,SOD-123,C82050,Basic/Ext,SMT,,0.041,Q1 gate clamp
 "LED, white",D8,1,KT-0805W,Hubei KENTO,0805,C34499,Basic,SMT,,0.02,Phantom-present indicator (white); KT-0805W Basic in-stock
@@ -16,9 +16,9 @@ Ferrite 600R @100MHz,FB1,1,BLM18AG601SN1D,Murata,0603,C19330,Basic/Ext,SMT,,0.02
 22uF 10V X5R,"C14, C15",2,CL21A226MPQNNNE,Samsung,0805,C29277,Extended,SMT,,0.1735,HP coupling
 100nF 100V X7R,C17,1,0805B104K101NT,Fenghua,0805,C89258,Extended,SMT,,0.0269,
 1uF 100V X7R,C18,1,CL31B105KCHNNNE,Samsung,1206,C13832,Extended,SMT,,0.129,Q1 gate soft-start
-2.2nF Y2 300VAC,C19,1,DE2E3SA222MA3BT02F,Murata,Disc TH 7.5mm,C524537,n/a,TH,DNP,0.087,"Hand-solder by user (Y2 safety cap; NOT JLC-assembled). X1/Y2 300/250VAC 2.2nF 7.5mm disc; source DigiKey/Mouser (Murata DE2E3) or TDK CS11-E2GA222MYNSA equivalent"
+2.2nF Y2 300VAC,C19,1,DE2E3SA222MA3BT02F,Murata,Disc TH 7.5mm,C524537,n/a,TH,DNP,0.087,Hand-solder by user (Y2 safety cap; NOT JLC-assembled). X1/Y2 300/250VAC 2.2nF 7.5mm disc; source DigiKey/Mouser (Murata DE2E3) or TDK CS11-E2GA222MYNSA equivalent
 2.2uF 10V X5R,C22,1,CL05A225KP5NSNC,Samsung,0402,C107369,Basic,SMT,,0.0076,LDO output cap
-10k 1%,"R1, R2, R3, R4, R25",5,RC0402FR-0710KL,Yageo,0402,C60490,Extended,SMT,,0.0059,"I2C pullups + AD0/AD1 straps. C# was C25744 = UNI-ROYAL 0402WGF1002TCE (Basic) but now OUT OF STOCK; switched to the matching Yageo MPN C60490 (in stock ~92k). Verify Basic/Extended badge in JLC UI"
+10k 1%,"R1, R2, R3, R4, R25",5,RC0402FR-0710KL,Yageo,0402,C60490,Extended,SMT,,0.0059,I2C pullups + AD0/AD1 straps. C# was C25744 = UNI-ROYAL 0402WGF1002TCE (Basic) but now OUT OF STOCK; switched to the matching Yageo MPN C60490 (in stock ~92k). Verify Basic/Extended badge in JLC UI
 6.81k 1%,"R5, R6",2,ERJ6ENF6811V,Panasonic,0805,C3025619,Extended,SMT,,0.0082,Phantom feed pair (no JLCPCB Basic for 6.81k 0805)
 2.2k 1%,"R7, R20",2,RC0402FR-072K2L,Yageo,0402,C25879,Basic,SMT,,0.0014,Mic bias
 33R 1%,"R9, R10, R24",3,RC0402FR-0733RL,Yageo,0402,C25105,Basic,SMT,,0.0059,HP output series
@@ -31,10 +31,12 @@ XLR / 6.35mm combo jack,J1,1,NCJ6FA-H,Neutrik,TH combo,C368458,n/a,TH,DNP,2.607,
 "1x7 female socket, 8.5mm","J3, J4",2,PM254V-11-07-H85,XFCN,PinSocket_1x07_2.54mm TH,C2832270,THT,TH,,0.0922,JLCPCB THT-assembled (enable THT components at checkout); 8.5mm stack height
 1x2 pin header,J5,1,PRPC002SAAN-RC,Sullins,PinHeader_1x02_2.54mm TH,,n/a,TH,DNP,0.30,PoE module connection - hand-solder
 1x4 pin header,J6,1,B-2100S04P-A110,Ckmtw,PinHeader_1x04_2.54mm TH,C124378,Extended,TH,,0.055,JLCPCB THT-assembled; external I2C/display harness. Pinout 1=AGND 2=+3V3 3=SCL 4=SDA
-SPDT slide switch (phantom on/off),SW1,1,SS-12D00-G3,SOFNG,SW_Slide_SS-12D00-G3 TH,C22355741,THT,TH,,0.0448,"Manual phantom on/off; drives OK1 (Q1 enable) + K1/K2 PhotoMOS LEDs via R12/R17/R18. Existing footprint."
+"1x4 female socket, 8.5mm",J7,1,PM254V-11-04-H85,XFCN,PinSocket_1x04_2.54mm TH,C541851,Extended,TH,DNP,0.0667,OPTIONAL: populate only when J1 is absent; direct-mates eurorack module J8 (same H85 stack series as J3/J4). Pin 1=GTIP 2=PGND 3=AGND 4=HP_L_OUT
+0R jumper 0805,R27,1,0805W8F0000T5E,UNI-ROYAL,0805,C17477,Basic,SMT,DNP,0.0101,"OPTIONAL: populate to force instrument mode (DET->PGND, replaces J1 ring-short); required when input arrives via J7"
+SPDT slide switch (phantom on/off),SW1,1,SS-12D00-G3,SOFNG,SW_Slide_SS-12D00-G3 TH,C22355741,THT,TH,,0.0448,Manual phantom on/off; drives OK1 (Q1 enable) + K1/K2 PhotoMOS LEDs via R12/R17/R18. Existing footprint.
 PhotoMOS SSR 400V (tap disconnect),"K1, K2",2,KAQY214S,Cosmo,SOP-4 3.8x4.1mm,C2890344,Extended,SMT,,0.68,"1-form-A AC/bidirectional MOSFET-output SSR; K1 breaks V_PoE tap, K2 breaks PGND tap, when phantom off (kills dynamic-mic buzz). Input LED off PHANTOM_SW via R17/R18. VERIFY pinout 1=A/2=K/3,4=load per C2890344; verify JLCPCB SMT-assembly vs hand-solder."
 470R 1% (PhotoMOS LED limit),"R17, R18",2,RC0402FR-07470RL,Yageo,0402,C114877,Basic,SMT,,0.0052,"K1/K2 input-LED current limit (~4.5mA at 3V3; KAQY214S Vf 1.2V, IFON<=3mA). Yageo RC0402FR family match; 306k stock; JLCPCB Economic-eligible."
 Op-amp Hi-Z buffer (RRIO CMOS),U3,1,TLV9061IDBVR,Texas Instruments,SOT-23-5,C398358,Extended,SMT,,0.096,"Guitar 1/4in Hi-Z buffer (~1M in), unity follower on +5V; drives mux U4. Pinout 1=OUT 2=V- 3=IN+ 4=IN- 5=V+"
-Analog switch triple SPDT,U4,1,74HC4053PW,Nexperia,TSSOP-16,C5648,Extended,SMT,,0.202,"Mic/instrument mux: MIC1P/MIC1N source = XLR mic (no plug) or buffered guitar + PGND ref (plug). Select=DET (jack ring; also routed to J3.7 for firmware readback). +3V3 supply so DET/select are 3.3V-native and GPIO-safe; analog range 0-3.3V covers codec-bias signals. 2 of 3 sections used (Z spare). VERIFY TSSOP-16 rotation in JLCPCB preview"
+Analog switch triple SPDT,U4,1,74HC4053PW,Nexperia,TSSOP-16,C5648,Extended,SMT,,0.202,Mic/instrument mux: MIC1P/MIC1N source = XLR mic (no plug) or buffered guitar + PGND ref (plug). Select=DET (jack ring; also routed to J3.7 for firmware readback). +3V3 supply so DET/select are 3.3V-native and GPIO-safe; analog range 0-3.3V covers codec-bias signals. 2 of 3 sections used (Z spare). VERIFY TSSOP-16 rotation in JLCPCB preview
 1M 1%,"R21, R26",2,0402WGF1004TCE,UNI-ROYAL,0402,C26083,Basic,SMT,,0.007,Guitar buffer input bias -> ~1M input impedance
 ESD diode bidir 5.5V,D9,1,TPD1E10B06DPYR,Texas Instruments,X1-SON-2 0.6x1.0mm,C48260,Extended,SMT,,0.042,"Guitar tip ESD clamp (GTIP-PGND); bidirectional +/-5.5V, 12pF. Tiny DFN - JLC-assembled; hand-rework alt: PESD5V0S1BB/C97640 SOD-523"
