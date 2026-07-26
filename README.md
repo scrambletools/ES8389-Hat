@@ -132,9 +132,15 @@ default) direct-mates the eurorack interposer's J8 header. Populate J7
 1 = `GTIP`, 2 = `PGND`, 3 = `AGND`, 4 = `HP_L_OUT` — signals on the outer
 pins with both grounds between them.
 
-Use shielded cable for runs beyond a few centimetres (the input is high
-impedance and hums otherwise): signal on the center conductor to T, shield to
-S at the board end only.
+**Cable:** use two-core shielded cable (the input is high impedance and
+hums otherwise) — one core to **T** (signal), the other core to **S**
+(return), and the **shield joined to S at the hat end only**; at the guitar
+end connect just the two cores (tip / sleeve) and trim + insulate the
+shield. The return current then flows in the tightly-coupled core pair
+while the shield does pure screening — bonding it at both ends would let
+ground-loop and pickup currents flow through it in series with the signal.
+For very short runs (a few cm) plain coax — center to T, shield as the
+return to S, connected at both ends — also works.
 
 ## Mono amplifier output (hardwiring J2)
 
@@ -159,8 +165,15 @@ Notes:
   the 22 µF output coupling caps give essentially full bass extension here.
 - Unlike the J1 guitar hardwire, **no jumper is required** — J2 has no
   plug-detect circuit.
-- Use shielded cable for runs beyond a few centimetres: center conductor to
-  `T`, shield to `TN` at the board end only.
+- **Cable:** use two-core shielded cable — one core to **T** (signal), the
+  other core to **TN** (return), **shield joined to TN at the hat end
+  only**; at the amp end connect just the two cores (tip / sleeve) and
+  trim + insulate the shield. This keeps the shield free of audio and
+  ground-loop current (which its resistance would otherwise convert to hum
+  in series with the signal) while still screening the run. This link is
+  forgiving (low-Z source into a ≥10 kΩ amp input), so for runs under
+  ~10 cm plain coax with the shield as the return, connected at both ends,
+  is also fine.
 
 ## Repository layout
 
