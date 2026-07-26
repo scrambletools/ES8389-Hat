@@ -49,7 +49,7 @@ microphones — no separate supply.
 | **J3, J4** | 1×7 sockets (8.5 mm) | mezzanine to the carrier — I²S, I²C, power |
 | **J5** | 1×2 header | **PoE** rail input from the carrier's PoE module *(hand-solder)* |
 | **J6** | 1×4 header | external **I²C** display (3V3 / GND / SDA / SCL) |
-| **SW1** | SPDT slide | **phantom power** on/off (manual) |
+| **SW1** | SPDT slide | **phantom power** on/off (manual) — *DNP; populate only in builds that use phantom.* Unpopulated = phantom permanently off; for switchless always-on phantom, bridge SW1 pads 1–2 instead |
 
 ## Key components
 
