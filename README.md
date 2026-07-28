@@ -132,6 +132,12 @@ default) direct-mates the eurorack interposer's J8 header. Populate J7
 1 = `GTIP`, 2 = `PGND`, 3 = `AGND`, 4 = `HP_L_OUT` — signals on the outer
 pins with both grounds between them.
 
+**Eurorack + display:** the interposer also passes J6 through to a display
+socket (its J9→J10). For that stack, fit **J6 on the bottom side** of the
+hat (pins pointing down) so it mates the interposer's J9 — J6 is JLC
+top-assembled by default, so eurorack builds should exclude it from
+assembly and hand-fit it instead.
+
 **Cable:** use two-core shielded cable (the input is high impedance and
 hums otherwise) — one core to **T** (signal), the other core to **S**
 (return), and the **shield joined to S at the hat end only**; at the guitar
