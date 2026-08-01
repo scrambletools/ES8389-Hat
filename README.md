@@ -48,7 +48,7 @@ microphones — no separate supply.
 | **J2** | CUI SJ-3524 TRRS | 3.5 mm headset — stereo **output** + electret mic *(hand-solder)* |
 | **J3, J4** | 1×7 sockets (8.5 mm) | mezzanine to the carrier — I²S, I²C, power |
 | **J5** | 1×2 header | **PoE** rail input from the carrier's PoE module *(hand-solder)* |
-| **J6** | 1×4 header | external **I²C** display (3V3 / GND / SDA / SCL) |
+| **J6** | 1×4 header | external **I²C** display (3V3 / GND / SDA / SCL) — *DNP; hand-fit (top side) only for a display harness. Eurorack builds don't need it: the interposer drives the display directly* |
 | **SW1** | SPDT slide | **phantom power** on/off (manual) — *DNP; populate only in builds that use phantom.* Unpopulated = phantom permanently off; for switchless always-on phantom, bridge SW1 pads 1–2 instead |
 
 ## Key components
@@ -75,6 +75,23 @@ microphones — no separate supply.
 The codec carries audio over **I²S** and is controlled over **I²C**. Its I²C address is
 set by the AD0/AD1 straps (R3/R4); R1/R2 are the SDA/SCL pull-ups. Typical firmware is
 **ESPHome** or **ESP-ADF** configured for an external I²S codec.
+
+## Power & host-connection notes
+
+- **USB-C and PoE at the same time is safe.** The carrier has an onboard
+  power mux (PoE-priority P-FET + Schottky), so the supplies never fight
+  and the PC's USB port can't be back-driven; the 48 V PoE line side stays
+  behind the PoE module's transformer isolation (Y-cap bridge only), with
+  or without phantom switched on. Flashing/serial over USB while running
+  on PoE is the intended debug workflow.
+- **Don't hot-plug USB mid-recording** — the ground-equalization transient
+  can print as a pop at +36 dB mic gain. Connect first, then record.
+- **Bench use on USB only:** leave phantom off (SW1 open/unpopulated) —
+  with phantom on, K1/K2 close and reconnect the unpowered PoE module,
+  which injects mains hum into the input.
+- **Eurorack builds:** never connect USB-C while the interposer powers the
+  carrier from the rack — that path has no power mux (see the Synthia
+  repo's usage notes).
 
 ## Microphone setups
 
@@ -126,17 +143,16 @@ connections on the J1 footprint, not two:
 
 **Eurorack module link (J7):** instead of hand-wiring, an optional 1×4
 female socket **J7** (8.5 mm stacking, same series as J3/J4, DNP by
-default) direct-mates the eurorack interposer's J8 header. Populate J7
+default) direct-mates the **Synthia** eurorack interposer's J8 header. Populate J7
 **only when J1 is absent** (they use the same input path), and populate
 **R27** with it (the module's input jack can't pull `DET` low). Pinout:
 1 = `GTIP`, 2 = `PGND`, 3 = `AGND`, 4 = `HP_L_OUT` — signals on the outer
 pins with both grounds between them.
 
-**Eurorack + display:** the interposer also passes J6 through to a display
-socket (its J9→J10). For that stack, fit **J6 on the bottom side** of the
-hat (pins pointing down) so it mates the interposer's J9 — J6 is JLC
-top-assembled by default, so eurorack builds should exclude it from
-assembly and hand-fit it instead.
+**Eurorack + display:** the interposer drives a display directly from its
+own display socket (J10, on the main GND/3V3/I²C nets), so **J6 can stay
+DNP in eurorack builds** — no bottom-side fitting needed. Fit J6 (top
+side) only for a normal display harness in non-rack builds.
 
 **Cable:** use two-core shielded cable (the input is high impedance and
 hums otherwise) — one core to **T** (signal), the other core to **S**
@@ -192,12 +208,16 @@ Notes:
 | `tools/check_sync.py` | verify schematic ↔ PCB netlist agreement |
 | `lib/` | project symbols, footprints, 3D models |
 | `case/` | enclosure CAD |
+| `brackets/` | mounting-bracket / faceplate CAD (guitar, amp, eurorack) |
+| `docs/` | schematic + silkscreen PDFs |
 
 ## Manufacturing
 
 See **[`fab/README.md`](fab/README.md)** for the full ordering guide. In short: JLCPCB
 fabricates and assembles most parts; you **hand-solder J1, J2, J5 and C19** (the Y-cap),
-and **R14 is left unpopulated** (DNP ground-lift jumper). Regenerate all fab outputs with:
+and **R14 is left unpopulated** (DNP ground-lift jumper). **J6** (display header) is also
+DNP — hand-fit it only when a display is used (top side normally, bottom side for the
+eurorack stack). Regenerate all fab outputs with:
 
 ```sh
 python3 tools/gen_fab.py

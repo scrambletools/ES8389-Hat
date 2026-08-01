@@ -2327,107 +2327,6 @@
 			(embedded_fonts no)
 		)
 	)
-		(symbol
-			(lib_id "scramble_hat:C")
-			(at 340.36 179.07 0)
-			(unit 1)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(dnp no)
-			(uuid "487b3f4a-8bf5-4256-a7f7-7d46339300a2")
-			(property "Reference" "C30"
-				(at 342.86 173.07 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects (font (size 1.27 1.27)))
-			)
-			(property "Value" "100nF 100V"
-				(at 342.86 185.07 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(effects (font (size 1.27 1.27)))
-			)
-			(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
-				(at 340.36 179.07 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects (font (size 1.27 1.27)))
-			)
-			(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/9f6ef17093b8d551f8b17af0626ff758.pdf?productCode=C89258"
-				(at 340.36 179.07 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects (font (size 1.27 1.27)))
-			)
-			(property "Description" "V_PHANTOM bypass at Q1 drain (PoE hash filter)"
-				(at 340.36 179.07 0)
-				(show_name no)
-				(do_not_autoplace no)
-				(hide yes)
-				(effects (font (size 1.27 1.27)))
-			)
-			(pin "1"
-				(uuid "a44614c4-19b3-49ae-8cc3-0a0814c5c4a9")
-			)
-			(pin "2"
-				(uuid "359d844a-8686-4200-aa62-5bf6bb10913f")
-			)
-			(instances
-				(project "scramble_hat"
-					(path "/2b93e89d-bdf9-4578-8fa1-59d0c819a910/f89707d4-5ec9-426f-a042-e33ce0e25fbe"
-						(reference "C30")
-						(unit 1)
-					)
-				)
-			)
-		)
-	(global_label "V_PHANTOM"
-		(shape passive)
-		(at 340.36 175.26 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "08fe1b71-1087-4e85-92ec-f03c4eab489e")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 340.36 175.26 90)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
-	(global_label "PGND"
-		(shape passive)
-		(at 340.36 182.88 270)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "12fa9eec-a01f-490c-962e-3465fe920826")
-		(property "Intersheetrefs" "${INTERSHEET_REFS}"
-			(at 340.36 182.88 270)
-			(hide yes)
-			(show_name no)
-			(do_not_autoplace no)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-	)
 	(wire
 		(pts
 			(xy 251.206 66.04) (xy 246.888 66.04)
@@ -2437,6 +2336,16 @@
 			(type default)
 		)
 		(uuid "0053df42-f816-4ba2-b6f7-3ce024304d7e")
+	)
+	(wire
+		(pts
+			(xy 329.946 223.012) (xy 335.026 223.012)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "0373ec95-b9c5-4240-b80a-6259c65cc17e")
 	)
 	(wire
 		(pts
@@ -2487,6 +2396,16 @@
 			(type default)
 		)
 		(uuid "1094a059-f2a4-4c63-99a8-0dddb576250f")
+	)
+	(wire
+		(pts
+			(xy 345.186 223.012) (xy 342.646 223.012)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "12b8e9e0-ae82-45cc-b592-a56293665ed6")
 	)
 	(wire
 		(pts
@@ -3526,6 +3445,28 @@
 			)
 		)
 	)
+	(global_label "V_PHANTOM"
+		(shape passive)
+		(at 345.186 223.012 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "08fe1b71-1087-4e85-92ec-f03c4eab489e")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 345.186 223.012 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
 	(global_label "DET"
 		(shape passive)
 		(at 356.87 116.332 0)
@@ -3582,6 +3523,28 @@
 		(uuid "0ca8c9c1-0866-4d5b-aebc-fefb51414e5f")
 		(property "Intersheetrefs" "${INTERSHEET_REFS}"
 			(at 180.086 187.706 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+	)
+	(global_label "PGND"
+		(shape passive)
+		(at 329.946 223.012 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "12fa9eec-a01f-490c-962e-3465fe920826")
+		(property "Intersheetrefs" "${INTERSHEET_REFS}"
+			(at 329.946 223.012 0)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7541,6 +7504,85 @@
 			(project "scramble_hat"
 				(path "/2b93e89d-bdf9-4578-8fa1-59d0c819a910/f89707d4-5ec9-426f-a042-e33ce0e25fbe"
 					(reference "D9")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "scramble_hat:C")
+		(at 338.836 223.012 270)
+		(unit 1)
+		(body_style 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(in_pos_files yes)
+		(dnp no)
+		(uuid "487b3f4a-8bf5-4256-a7f7-7d46339300a2")
+		(property "Reference" "C30"
+			(at 338.328 227.33 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "100nF 100V"
+			(at 338.876 219.552 90)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Capacitor_SMD:C_0805_2012Metric"
+			(at 338.836 223.012 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Datasheet" "https://datasheet.lcsc.com/datasheet/pdf/9f6ef17093b8d551f8b17af0626ff758.pdf?productCode=C89258"
+			(at 338.836 223.012 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Description" "V_PHANTOM bypass at Q1 drain (PoE hash filter)"
+			(at 338.836 223.012 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(pin "1"
+			(uuid "a44614c4-19b3-49ae-8cc3-0a0814c5c4a9")
+		)
+		(pin "2"
+			(uuid "359d844a-8686-4200-aa62-5bf6bb10913f")
+		)
+		(instances
+			(project "scramble_hat"
+				(path "/2b93e89d-bdf9-4578-8fa1-59d0c819a910/f89707d4-5ec9-426f-a042-e33ce0e25fbe"
+					(reference "C30")
 					(unit 1)
 				)
 			)
