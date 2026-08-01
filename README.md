@@ -89,9 +89,11 @@ set by the AD0/AD1 straps (R3/R4); R1/R2 are the SDA/SCL pull-ups. Typical firmw
 - **Bench use on USB only:** leave phantom off (SW1 open/unpopulated) —
   with phantom on, K1/K2 close and reconnect the unpowered PoE module,
   which injects mains hum into the input.
-- **Eurorack builds:** never connect USB-C while the interposer powers the
-  carrier from the rack — that path has no power mux (see the Synthia
-  repo's usage notes).
+- **Eurorack builds:** USB-C for flashing/serial works while Synthia
+  powers the carrier from the rack — the interposer feeds the carrier's
+  pre-mux node (bench-verified), so the same USB power mux applies. Avoid
+  leaving USB plugged in with the rack powered off (it back-feeds the
+  module's buck output); details in the Synthia repo.
 
 ## Microphone setups
 
