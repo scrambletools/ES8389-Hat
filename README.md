@@ -76,6 +76,50 @@ The codec carries audio over **I²S** and is controlled over **I²C**. Its I²C 
 set by the AD0/AD1 straps (R3/R4); R1/R2 are the SDA/SCL pull-ups. Typical firmware is
 **ESPHome** or **ESP-ADF** configured for an external I²S codec.
 
+## Mezzanine pinout (J3 / J4)
+
+The header assignment is chosen so **one unmodified board works on two
+hosts**: the Waveshare ESP32-P4-ETH carrier it was designed for, and a
+**Raspberry Pi Pico** — the hat's footprint (2.54 mm pitch, ~17.8 mm row
+spacing, 51 × 21 mm outline) lands exactly on the Pico's USB-end pins
+1–7 / 40–34.
+
+![Mezzanine pinout](docs/scramble_hat-pinout.png)
+
+| J3 pad | net | P4-ETH | Pico | | J4 pad | net | P4-ETH | Pico |
+|---|---|---|---|---|---|---|---|---|
+| 1 | `SDA` | GPIO54 | GP0 | | 1 | `+5V` | VCC1_5V | VBUS |
+| 2 | `SCL` | GPIO19 | GP1 | | 2 | *pass* | VCC_5V | VSYS |
+| 3 | `AGND` | GND | GND | | 3 | `AGND` | GND | GND |
+| 4 | `DSDIN` | GPIO18 | GP2 | | 4 | *pass* | 3V3_EN | 3V3_EN |
+| 5 | `BCLK` | GPIO17 | GP3 | | 5 | `+3V3` | 3V3 | 3V3(OUT) |
+| 6 | `LRCK` | GPIO16 | GP4 | | 6 | `MCLK` | GPIO20 | ADC_VREF — unused |
+| 7 | `ASDOUT` | GPIO15 | GP5 | | 7 | `DET` | GPIO21 | GP28 |
+
+Why it lands this way:
+
+- **BCLK/LRCK adjacent** (GP3/GP4, WS = BCLK + 1) — stock side-set PIO
+  I²S implementations work unmodified on the Pico.
+- **SDA/SCL on GP0/GP1** — a hardware I²C0 pair and MicroPython's default.
+- **MCLK sits over the Pico's ADC_VREF**, which is harmless: both ends are
+  passive (ADC_VREF is a filtered rail, the codec's MCLK is a hi-Z input),
+  so a full 40-pin header can be fitted. The Pico runs the ES8389 in
+  **SCLK-source mode** (reg 0x02 bit 6 = 0 — the codec clocks itself from
+  BCLK; supported combos cover 44.1 k/48 k at 16/32-bit). The P4 keeps a
+  true MCLK on GPIO20. Never jumper a Pico GPIO into a fitted J4.6.
+  **R28** (0 Ω 0805, fitted by default) sits in series right at J4.6:
+  lift it on a Pico build that uses the Pico's own ADC, so the hat's MCLK
+  trace can't couple noise into ADC_VREF — or use its codec-side pad as
+  the MCLK injection point for an advanced Pico build (192 kHz needs a
+  real MCLK).
+- **DET on GP28** — instrument auto-detect readback works on both hosts.
+
+Pico caveats: `+5V` is VBUS, so the analog LDO only runs on USB power;
+full-duplex I²S needs a custom PIO RX machine against the TX clocks; no
+ES8389 driver exists for the Pico yet (port from ESP-ADF or the mainline
+Linux `es8389.c`). For low BCLK jitter set `sys_clk` to 153.6 MHz so
+3.072 MHz divides exactly.
+
 ## Power & host-connection notes
 
 - **USB-C and PoE at the same time is safe.** The carrier has an onboard
@@ -129,7 +173,7 @@ The ¼″ side of J1 feeds a high-impedance buffer (U3, ~500 kΩ input) into the
 codec's MIC1 channel through an analog mux (U4). Inserting a **mono TS plug**
 (guitar cable) shorts the jack's Ring contact to the Sleeve, pulling the
 `DET` line low — this automatically switches MIC1 from the XLR mic path to
-the buffered instrument path, and is readable by the carrier on **J3.7**
+the buffered instrument path, and is readable by the carrier on **J4.7**
 (input, active-low = instrument present). Remove the plug (or use an XLR
 mic) and the input returns to the mic path. Phantom power never reaches the
 ¼″ contacts.

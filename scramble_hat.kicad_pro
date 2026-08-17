@@ -536,6 +536,7 @@
       "netlist": "",
       "plot": "fab/",
       "specctra_dsn": "scramble_hat.dsn",
+      "step": "",
       "vrml": ""
     },
     "page_layout_descr_file": ""
