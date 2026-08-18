@@ -115,10 +115,11 @@ Why it lands this way:
 - **DET on GP28** — instrument auto-detect readback works on both hosts.
 
 Pico caveats: `+5V` is VBUS, so the analog LDO only runs on USB power;
-full-duplex I²S needs a custom PIO RX machine against the TX clocks; no
-ES8389 driver exists for the Pico yet (port from ESP-ADF or the mainline
-Linux `es8389.c`). For low BCLK jitter set `sys_clk` to 153.6 MHz so
-3.072 MHz divides exactly.
+**phantom power is unavailable** (no PoE front end — see the phantom
+section below); full-duplex I²S needs a custom PIO RX machine against
+the TX clocks; no ES8389 driver exists for the Pico yet (port from
+ESP-ADF or the mainline Linux `es8389.c`). For low BCLK jitter set
+`sys_clk` to 153.6 MHz so 3.072 MHz divides exactly.
 
 ## Power & host-connection notes
 
@@ -138,6 +139,35 @@ Linux `es8389.c`). For low BCLK jitter set `sys_clk` to 153.6 MHz so
   pre-mux node (bench-verified), so the same USB power mux applies. Avoid
   leaving USB plugged in with the rack powered off (it back-feeds the
   module's buck output); details in the Synthia repo.
+
+## Phantom power source (the PoE tap)
+
+Phantom power is the one hat feature that needs more than the mezzanine:
+the 48 V-class rail is **tapped from the PoE bus** and enters the hat on
+**J5** (pin 1 = `TAP_HV` +, pin 2 = `TAP_GND` −). On the ESP32-P4-ETH
+carrier, the RJ45 mag-jack's pair centre taps run raw to the H7 header;
+the **plug-in PoE module** on H7 carries the bridge rectifiers (BD1/BD2)
+that turn them into 37–57 V DC before its isolated DC-DC makes the 5 V.
+**Tap the two bridge-rectifier outputs on the PoE module** — `+` to
+J5.1, `−` to J5.2. The module has **no connector for the tap**, so the
+two leads are hand-soldered directly to the rectifier output pins; keep
+them reasonably short:
+
+![PoE tap for phantom power](docs/scramble_hat-poe-tap.png)
+
+- The tap sits **before** the module's isolation barrier: 37–57 V is
+  present whenever a PoE switch/injector is attached, even with SW1 off.
+- **Never add bulk capacitance to the tap** (> 0.15 µF breaks the
+  module's 802.3af detection signature and the carrier won't power up).
+  The hat is designed for this — its reservoir sits after Q1.
+- Verify `+`/`−` with a meter at the bridge outputs before wiring; a
+  reversed tap defeats the D6/Q1 protection.
+- **Raspberry Pi Pico builds: phantom power is unavailable.** A Pico has
+  no Ethernet, so nothing like this PoE front end exists — the XLR
+  condenser path is dead unless you feed J5 from an equivalent
+  **isolated** 44–57 V source with the same polarity. Every other hat
+  function (instrument input, dynamic mics, headphone/line out, display)
+  works normally on a Pico.
 
 ## Microphone setups
 
