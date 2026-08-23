@@ -68,7 +68,7 @@ microphones — no separate supply.
 
 - **≈ 51.4 × 21.1 mm**, **4-layer** (F.Cu / In1.Cu / In2.Cu / B.Cu), 1.6 mm.
 - Components on **both sides** (SMD top + bottom) plus a few through-hole connectors.
-- Enclosure CAD lives in `case/`.
+- Mechanical CAD (enclosure, mounting brackets, faceplates) is maintained outside this repo.
 
 ## Host integration
 
@@ -283,8 +283,6 @@ Notes:
 | `tools/gen_fab.py` | regenerate every production file from the design |
 | `tools/check_sync.py` | verify schematic ↔ PCB netlist agreement |
 | `lib/` | project symbols, footprints, 3D models |
-| `case/` | enclosure CAD |
-| `brackets/` | mounting-bracket / faceplate CAD (guitar, amp, eurorack) |
 | `docs/` | schematic + silkscreen PDFs |
 
 ## Manufacturing

@@ -18,11 +18,11 @@ production/
 fabrication-toolkit-options.json
 
 # Board-level STEP exports (whole-board kicad-cli output).
-# Footprint models in lib/3dmodels/ and case geometry in case/ stay tracked.
+# Footprint models in lib/3dmodels/ stay tracked.
 /*.step
 /*.stp
 
-# Plasticity churn — keep only the main model (case/hat-trik-case.plasticity);
-# ignore autosave and the rolling hour/day/prev history snapshots.
-*_autosave.plasticity
+# Mechanical CAD (Plasticity models, brackets, case) lives outside this repo;
+# keep any stray Plasticity churn out just in case.
+*.plasticity
 plasticity/
